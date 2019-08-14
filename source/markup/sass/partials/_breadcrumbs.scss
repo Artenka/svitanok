@@ -1,0 +1,23 @@
+.breadcrumbs {
+ padding: 20px 0;
+
+ .main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .breadcrumbs__item {
+  font-size: 12px;
+  line-height: 24px;
+  color: #B6B5B5;
+  &:after {
+   content: '...';
+   margin: 0 10px;
+  }
+  &:last-child {
+   &:after {
+    display: none;
+   }
+  }
+ }
+}

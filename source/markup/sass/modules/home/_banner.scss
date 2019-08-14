@@ -1,0 +1,28 @@
+.home-banner {
+ background: url(../img/home/banner/home-banner.jpg) no-repeat center / cover;
+
+ > .main-wrapper {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0 60px;
+ }
+
+ .home-banner__title {
+  width: 790px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+ }
+ .home-banner__subtitle {
+  width: 700px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-top: 20px;
+ }
+}

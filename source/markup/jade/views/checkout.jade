@@ -1,0 +1,126 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#checkout
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        p.breadcrumbs__item Оформление заказа
+
+    section.section.section-checkout
+      .main-wrapper.main-wrapper--p
+        h1.title Оформление заказа
+        .checkout-layout
+          .checkout-main
+            .checkout-steps
+              .checkout-step.checkout-step--active
+                .checkout-step__number шаг 1
+                h2.checkout-step__title Получатель
+              .checkout-step
+                .checkout-step__number шаг 2
+                h2.checkout-step__title Доставка
+              .checkout-step
+                .checkout-step__number шаг 3
+                h2.checkout-step__title Готово!
+
+            .checkout-formblock.formblock
+              .formgroup
+                input(type="text" placeholder="Ваше имя").input-box
+                p.formgroup__note Важно, чтобы товар получили именно Вы.
+                .formgroup__message.formgroup__message--success У Вас красивое имя!
+              .formgroup
+                input(type="text" placeholder="+38").input-box
+                p.formgroup__note Вам обязательно позвонят для уточнения заказа перед отправкой.
+              .formgroup
+                select.input-box
+                  option(selected="true" disabled="true") Выберите город
+                  option Киев
+                  option Харьков
+                .formgroup__message.formgroup__message--success Прекрасный город
+            button.btn.btn--2.checkout-formblock-submit выбрать способ доставки
+
+            br
+            br
+            br
+            .checkout-steps
+              .checkout-step.checkout-step--active
+                .checkout-step__number шаг 1
+                h2.checkout-step__title Получатель
+              .checkout-step.checkout-step--active
+                .checkout-step__number шаг 2
+                h2.checkout-step__title Доставка
+              .checkout-step
+                .checkout-step__number шаг 3
+                h2.checkout-step__title Готово!
+
+            .checkout-packages
+              .checkout-packages-list
+                .checkout-packages-item
+                  h2.subtitle-2.checkout-packages-item__title Самовывоз<br> из Новой почты
+                  h3.text-2.checkout-packages-item__price Доплата: 50 грн
+                  .checkout-packages-item__divider
+                  h2.subtitle-2 Доставка:
+                  h2.subtitle 7 - 10 дней
+                .checkout-packages-item
+                  h2.subtitle-2.checkout-packages-item__title Курьерская доставка
+                  h3.text-2.checkout-packages-item__price Доплата: 230 грн *
+                  .checkout-packages-item__divider
+                  h2.subtitle-2 Доставка:
+                  h2.subtitle 7 - 10 дней
+                .checkout-packages-item
+                  h2.subtitle-2.checkout-packages-item__title Самовывоз<br> с нашего склада
+                  h3.text-2.checkout-packages-item__price Бесплатно
+                  .checkout-packages-item__divider
+                  h2.subtitle-2 Доставка на склад:
+                  h2.subtitle 5 - 7 дней
+              p.checkout-packages-disclaimer * Окончательная стоимость перевозки может отличаться от расчетной
+              .checkout-packages-btns
+                button.btn.checkout-packages-btns__next офрмить заказ
+                a(href="#").checkout-packages-btns__prev предыдущий шаг
+
+          .checkout-aside
+            .checkout-aside-block.checkout-aside-block--order
+              h2.subtitle Ваш заказ
+              .checkout-order
+                .checkout-order-item
+                  .checkout-order-item__thumb(style="background-image: url(img/home/products/home-products-item-01-01.jpg)")
+                  .checkout-order-item__info
+                    h2 ANKARA-32
+                    p Артикул: 5849582
+                    p Размер: 1300 х 1790
+                  .checkout-order-item__counter 1 шт
+                  .checkout-order-item__price 2 090 <span>грн.</span>
+                .checkout-order-item
+                  .checkout-order-item__thumb(style="background-image: url(img/home/products/home-products-item-01-01.jpg)")
+                  .checkout-order-item__info
+                    h2 ANKARA-32
+                    p Артикул: 5849582
+                    p Размер: 1300 х 1790
+                  .checkout-order-item__counter 1 шт
+                  .checkout-order-item__price 2 090 <span>грн.</span>
+                .checkout-order-item
+                  .checkout-order-item__thumb(style="background-image: url(img/home/products/home-products-item-01-01.jpg)")
+                  .checkout-order-item__info
+                    h2 ANKARA-32
+                    p Артикул: 5849582
+                    p Размер: 1300 х 1790
+                  .checkout-order-item__counter 1 шт
+                  .checkout-order-item__price 2 090 <span>грн.</span>
+                .checkout-order-total
+                  .checkout-order-total__left
+                    h3 Итого:
+                  .checkout-order-total__right
+                    h2 5 090 <span>грн.</span>
+                .checkout-order-edit
+                  a(href="#") Редактировать заказ
+
+            .checkout-aside-block.checkout-aside-block--info
+              h2.subtitle
+                b Наш дежурный всегда готов помочь вам!
+              h2.subtitle Если возникли вопросы, звоните:<br>   +38(057) 751 75 07
+
+    include ../partials/certificates
+
+  include ../partials/footer

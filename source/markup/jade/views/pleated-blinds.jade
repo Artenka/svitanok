@@ -1,0 +1,23 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#pleated-blinds
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Шторы плиссе
+
+    include ../pages-partials/pleated-blinds/intro-offer
+    include ../pages-partials/pleated-blinds/fabric-type
+    include ../pages-partials/pleated-blinds/fabric-catalog
+    include ../pages-partials/pleated-blinds/description
+    include ../pages-partials/pleated-blinds/about
+    include ../partials/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

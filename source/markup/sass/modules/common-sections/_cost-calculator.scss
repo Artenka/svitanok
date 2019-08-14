@@ -1,0 +1,55 @@
+.cost-calculator {
+ background: url(../img/common/ornament-3.svg) no-repeat top 16px left calc(50% - 675px);
+ padding-top: 60px;
+
+ .title, .subtitle {
+  text-align: center;
+ }
+}
+
+.cost-calculator-main {
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+ margin-top: 35px;
+
+ .cost-calculator-main__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 10px 0;
+
+  > h2 {
+   font-size: 32px;
+
+   span {
+    font-weight: 700;
+    color: #FFA200;
+   }
+  }
+  > .btn {
+   margin-top: 30px;
+  }
+  > p {
+   font-size: 11px;
+   line-height: 15px;
+   color: #000000;
+   margin-top: 11px;
+  }
+ }
+
+ .cost-calculator-main__image {
+  width: 750px;
+  height: 480px;
+  background: url(../img/common/cost-calculator/cost-calculator-image.jpg) no-repeat center / cover;
+ }
+
+ &.cost-calculator-main--green {
+
+  .cost-calculator-main__content > h2 span {
+   color: #3CB54B;
+  }
+ }
+}

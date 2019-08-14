@@ -1,0 +1,55 @@
+.home-about-2 {
+ background: url(../img/common/ornament-2.svg) no-repeat top -30px left ;
+}
+
+.home-about-2-main {
+ display: flex;
+
+ .home-about-2-main__left {
+  flex: 1;
+  padding: 160px 170px 110px 135px;
+ }
+
+ .home-about-2-main__right {
+  width: 435px;
+  position: relative;
+  &:before {
+   content: '';
+   width: 485px;
+   height: 100%;
+   background: url(../img/home/about-2/home-about-2-right.jpg) no-repeat center / cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+  }
+ }
+
+ .home-about-2-main__title {
+
+ }
+ .home-about-2-main__subtitle {
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #018DBD;
+ }
+ .home-about-2-main__text {
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  margin-top: 30px;
+  position: relative;
+  &:before {
+   content: '';
+   width: 35px;
+   height: 23px;
+   background: url(../img/common/quote-icon.svg) no-repeat center / contain;
+   position: absolute;
+   top: -5px;
+   left: -26px;
+   z-index: 0;
+  }
+ }
+
+ .home-about-2-main__btn {
+  margin-top: 26px;
+ }
+}

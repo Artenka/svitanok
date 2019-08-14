@@ -1,0 +1,91 @@
+.popup-layout#popup-cart
+  .popup-scrollarea
+    .popup.popup-cart
+      .popup__close
+      header.cart-header
+        h2.subtitle Поздравляем, вы сделали отличный выбор!
+        button(type="button").cart-header__print
+      .cart-callback
+        .cart-callback__left
+          h2.text-2 Звоните, мы поможем!
+          .phone-call
+            a(href="#") +38(057) 751 75 07
+        .cart-callback__right
+          h2.text-2 Подарок исчезнет через:
+          h3.cart-callback__timer 7 : 35
+
+      .cart
+        .cart-item
+          .cart-item__line
+            .cart-item__line-inner Эту ткань установили более 400 человек. Нареканий по качеству не было.
+          .cart-item__thumb(style="background-image: url(img/home/products/home-products-item-01-01.jpg)")
+            .cart-item__zoom.zoom-btn
+            .cart-item__type
+              img(src="img/common/brightness-icon-4.svg")
+              p Black Out
+          .cart-item__info
+            h2 ANKARA-32
+            h3.text-2 Артикул: 5849582
+            h3.text-2 Размер: 1300 х 1790
+          .cart-item__quantity
+            .quantity
+              button.quantity__minus  -
+              input.quantity__number(type='number', value='1', min='1')
+              button.quantity__plus  +
+
+          .cart-item__price
+            h3.cart-item__price-old 2 588 грн.
+            h2.cart-item__price-new 992 090 грн.
+          .cart-item__delete
+        .cart-item
+          .cart-item__line
+            .cart-item__line-inner Ни одного брака за всё время!
+          .cart-item__thumb(style="background-image: url(img/home/products/home-products-item-01-01.jpg)")
+            .cart-item__zoom.zoom-btn
+            .cart-item__type
+              img(src="img/common/brightness-icon-4.svg")
+              p Black Out
+          .cart-item__info
+            h2 ANKARA-32
+            h3.text-2 Артикул: 5849582
+            h3.text-2 Размер: 1300 х 1790
+          .cart-item__quantity
+            .quantity
+              button.quantity__minus  -
+              input.quantity__number(type='number', value='1', min='1')
+              button.quantity__plus  +
+
+          .cart-item__price
+            h3.cart-item__price-old 2 588 грн.
+            h2.cart-item__price-new 2 090 грн.
+          .cart-item__delete
+        .cart-item
+          .cart-item__line
+            .cart-item__line-inner.cart-item__line-inner--gift Подарок!
+          .cart-item__thumb(style="background-image: url(img/home/products/home-products-item-01-01.jpg)")
+            .cart-item__zoom.zoom-btn
+            .cart-item__type
+              img(src="img/common/brightness-icon-4.svg")
+              p Black Out
+          .cart-item__info
+            h2 ANKARA-32
+            h3.text-2 Артикул: 5849582
+            h3.text-2 Размер: 1300 х 1790
+          .cart-item__quantity
+            .quantity
+              button.quantity__minus  -
+              input.quantity__number(type='number', value='1', min='1')
+              button.quantity__plus  +
+
+          .cart-item__price
+            h3.cart-item__price-old 240 грн.
+            h2.cart-item__price-new 0 грн.
+          .cart-item__delete
+
+      footer.cart-footer
+        button(type="button").btn.btn--2.btn--transparent.cart-footer__continue продолжить покупки
+        .cart-footer__total Итого: <b>2 090 грн.</b>
+        button(type="button").btn.btn--2.cart-footer__checkout оформить заказ
+
+      .cart-measure
+        a(href="#") Вызвать замерщика по телефону

@@ -1,0 +1,65 @@
+.pleated-fabric-type {
+ display: flex;
+ justify-content: space-between;
+
+ .pleated-fabric-type__left {
+  width: 565px;
+  display: flex;
+
+ }
+ .pleated-fabric-type__right {
+  width: 630px;
+ }
+
+ .pleated-fabric-type__content {
+  flex: 1;
+  border: 1px solid #000;
+  background: url(../img/pleated-blinds/fabric-type/fabric-type-content.svg) no-repeat center / cover;
+
+  padding: 86px 30px;
+
+  .subtitle {
+   max-width: 410px;
+  }
+  .text {
+   max-width: 440px;
+   margin-top: 40px;
+  }
+ }
+
+ .pleated-fabric-type__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .pleated-fabric-type__about-item {
+   width: 313px;
+   height: 272px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   border: 1px solid #000;
+   background: no-repeat center / cover;
+   margin-top: 5px;
+   &:first-child {
+    width: 100%;
+    margin-top: 0;
+   }
+
+   .pleated-fabric-type__about-item-footer {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+
+    p {
+     width: 100%;
+     font-size: 13px;
+     line-height: 18px;
+     color: #454545;
+     text-align: center;
+    }
+   }
+  }
+ }
+}

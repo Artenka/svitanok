@@ -1,0 +1,22 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#marquises
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Маркизы
+
+    include ../pages-partials/marquises/intro-offer
+    include ../pages-partials/marquises/products
+    include ../pages-partials/home/action
+    include ../pages-partials/marquises/about-1
+    include ../pages-partials/marquises/cost-calculator
+    include ../pages-partials/marquises/portfolio
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

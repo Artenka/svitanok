@@ -1,0 +1,19 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#pergolas
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Перголы
+
+    include ../pages-partials/pergolas/intro-offer
+    include ../pages-partials/pergolas/about-1
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

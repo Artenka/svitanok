@@ -1,0 +1,74 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#showroom
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Контакты
+        p.breadcrumbs__item Офис№1
+
+    section.section.section-showroom-info
+      .main-wrapper.main-wrapper--p
+        h1.title-big г. харьков шоу-рум №3
+
+        .info-blocks
+          .info-block
+            h2.subtitle Наш телефон
+            .info-block__divider
+            img(src="img/common/handset-icon-orange.svg")
+            h3.text &nbsp;
+            h2.subtitle
+              a(href="#") +38(097) 367 50 50
+          .info-block.info-block--bg
+            h2.subtitle Время работы офиса
+            .info-block__divider
+            img(src="img/common/clock-icon-orange.svg")
+            h3.text Ежедневно
+            h2.subtitle с 9.00 до 20.00
+          .info-block
+            h2.subtitle Где мы находимся
+            .info-block__divider
+            img(src="img/common/pin-icon-orange.svg")
+            h3.text г. Харьков, р-н Холодная Гора
+            h2.subtitle ул. Полтавский шлях, д.147
+
+    section.section.section-showroom-main
+      .main-wrapper.main-wrapper--p
+        .showroom-main
+          .showroom-aside
+            .showroom-aside-list
+              .showroom-aside-item.showroom-aside-item--walk
+                h2.showroom-aside-item__title Как дойти пешком
+                p.showroom-aside-item__text Если вам удобно посетить нас, доехав на метро, то ближайшая к нам станция — Холодная Гора
+              .showroom-aside-item.showroom-aside-item--car
+                h2.showroom-aside-item__title Как доехать на машине
+                p.showroom-aside-item__text Если вам удобно посетить нас, доехав на метро, то ближайшая к нам станция — Холодная Гора
+              .showroom-aside-item.showroom-aside-item--public
+                h2.showroom-aside-item__title Как добраться на общественном транспорте
+                p.showroom-aside-item__text Если вам удобно посетить нас, доехав на метро, то ближайшая к нам станция — Холодная Гора
+              .showroom-aside-item.showroom-aside-item--subway
+                h2.showroom-aside-item__title Как доехать на метро
+                p.showroom-aside-item__text Если вам удобно посетить нас, доехав на метро, то ближайшая к нам станция — Холодная Гора
+          .showroom-slider.slick--arrows-1.slick--arrows-1-1
+            .showroom-slide
+              .showroom-slide-inner(style="background-image: url(img/showroom/showroom-image.jpg)")
+            .showroom-slide
+              .showroom-slide-inner(style="background-image: url(img/showroom/showroom-image.jpg)")
+            .showroom-slide
+              .showroom-slide-inner(style="background-image: url(img/showroom/showroom-image.jpg)")
+
+    include ../partials/consultation
+    include ../partials/certificates
+
+
+  include ../partials/footer
+
+  script.
+    $(function(){
+      $('.showroom-aside-item').click(function(){
+        $(this).toggleClass('showroom-aside-item--active');
+      });
+    });

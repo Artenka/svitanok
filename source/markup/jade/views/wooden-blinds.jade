@@ -1,0 +1,22 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#wooden-blinds
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Деревянные жалюзи
+
+    include ../pages-partials/wooden-blinds/intro-offer
+    include ../pages-partials/wooden-blinds/description
+    include ../pages-partials/wooden-blinds/advantages
+    include ../pages-partials/wooden-blinds/about
+    include ../partials/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

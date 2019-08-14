@@ -1,0 +1,32 @@
+.portfolio-1-section {
+ padding: 80px 0 35px;
+ position: relative;
+ &:before {
+  content: '';
+  width: 369px;
+  height: 338px;
+  background: url(../img/common/ornament-5.svg) no-repeat center / contain;
+  position: absolute;
+  top: -100px;
+  right: calc(50% - 900px);
+  z-index: -1;
+ }
+}
+
+.portfolio-1 {
+ display: inline-grid;
+ grid-template-columns: repeat(6, 196px);
+ grid-auto-rows: 154px;
+ grid-auto-flow: row dense;
+ grid-gap: 4px;
+ margin-top: 35px;
+
+ .portfolio-1__item {
+  background: no-repeat center / cover;
+
+  &.portfolio-1__item--lg {
+   grid-row: span 2;
+   grid-column: span 2;
+  }
+ }
+}

@@ -1,0 +1,22 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#roman-blinds
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Римские шторы
+
+    include ../pages-partials/roman-blinds/intro-offer
+    include ../pages-partials/roman-blinds/description
+    include ../pages-partials/roman-blinds/advantages
+    include ../pages-partials/roman-blinds/about
+    include ../partials/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

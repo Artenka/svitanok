@@ -1,0 +1,129 @@
+.pleated-fabric-catalog-section {
+ padding: 50px 0;
+
+ .title, .subtitle {
+  text-align: center;
+ }
+}
+
+.pleated-fabric-catalog-nav {
+ display: flex;
+ justify-content: center;
+ margin-top: 42px;
+
+ .pleated-fabric-catalog-nav__item {
+  width: 224px;
+  border: none;
+  border-radius: 10px;
+  background: url(../img/common/dropdown-icon-1.svg) no-repeat center right 30px, #FFFFFF;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #676767;
+  padding: 23px 40px 23px 30px;
+  margin: 0 25px;
+ }
+}
+
+.pleated-fabric-catalog {
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 50px;
+}
+
+.pleated-fabric-catalog-item {
+ width: 165px;
+ height: 165px;
+ display: flex;
+ align-items: flex-end;
+ border: 1px solid #C4C4C4;
+ border-radius: 5px;
+ background: no-repeat center / cover;
+ margin: 0 40px 35px 0;
+ position: relative;
+ overflow: hidden;
+ &:hover {
+  .pleated-fabric-catalog-item__price {
+   opacity: 0;
+  }
+  .pleated-fabric-catalog-item__cart {
+   opacity: 1;
+  }
+ }
+ &:nth-child(6n+6) {
+  margin-right: 0;
+ }
+
+ .pleated-fabric-catalog-item__brightness {
+  width: 40px;
+  height: 21px;
+  background: url(../img/common/brightness-icon.svg) no-repeat center left 8px, rgba(255, 255, 255, 0.604346);
+  border-radius: 10px 0px 0px 10px;
+  position: absolute;
+  top: 13px;
+  right: 0;
+  &.pleated-fabric-catalog-item__brightness--1 {background-image: url(../img/common/brightness-icon-1.svg);}
+  &.pleated-fabric-catalog-item__brightness--2 {background-image: url(../img/common/brightness-icon-2.svg);}
+  &.pleated-fabric-catalog-item__brightness--3 {background-image: url(../img/common/brightness-icon-3.svg);}
+  &.pleated-fabric-catalog-item__brightness--4 {background-image: url(../img/common/brightness-icon-4.svg);}
+ }
+
+ .pleated-fabric-catalog-item__zoom {
+  @extend .zoom-btn;
+  top: 51px;
+ }
+
+ .pleated-fabric-catalog-item__hit {
+  width: 40px;
+  height: 21px;
+  background: #FFA200;
+  border-radius: 0px 100px 100px 0px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  top: 13px;
+  left: 0;
+ }
+
+ .pleated-fabric-catalog-item__footer {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+ }
+
+ .pleated-fabric-catalog-item__price {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  position: relative;
+  top: 0;
+  transition: 0.2s;
+ }
+ .pleated-fabric-catalog-item__cart {
+  width: 100%;
+  font-size: 11px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #018DBD;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+ }
+}

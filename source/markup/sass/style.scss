@@ -1,0 +1,35 @@
+// common scss files
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/reset';
+@import 'common/global';
+@import 'common/fonts';
+// external libraries scss files
+@import 'lib/intlTelInput';
+@import 'lib/slick';
+// partials scss files
+@import 'partials/common';
+@import 'partials/form';
+@import 'partials/buttons';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/slider';
+@import 'partials/breadcrumbs';
+@import 'partials/consultation';
+@import 'partials/popups';
+@import 'partials/popups/popup-cart';
+// modules scss files
+@import 'modules/index';
+@import 'modules/common-sections/intro-offer';
+@import 'modules/common-sections/cost-calculator';
+@import 'modules/common-sections/common-about';
+@import 'modules/common-sections/advantages';
+@import 'modules/common-sections/portfolio-1';
+@import 'modules/common-sections/blinds-description';
+@import 'modules/common-sections/about-1';
+@import 'modules/home';
+@import 'modules/indoor-sun-protection';
+@import 'modules/vertical-blinds';
+@import 'modules/pleated-blinds';
+@import 'modules/checkout';
+@import 'modules/showroom';

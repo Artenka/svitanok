@@ -1,0 +1,214 @@
+.intro-offer-section {
+ background: url(../img/common/rhombus-1.svg) no-repeat top 40px right calc(50% - 640px) / 34px;
+ padding: 0 0 40px;
+ position: relative;
+ &:before {
+  content: '';
+  width: 80px;
+  height: 80px;
+  background: url(../img/common/rhombus-1.svg) no-repeat center / contain;
+  position: absolute;
+  top: -55px;
+  right: calc(50% - 650px);
+ }
+}
+
+.intro-offer {
+ display: flex;
+ min-height: 515px;
+
+ .intro-offer__left {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 24px 30px 0;
+  position: relative;
+  &:before {
+   content: '';
+   width: 10px;
+   height: 75px;
+   background: #FFA200;
+   position: absolute;
+   top: 20px;
+   right: -5px;
+   z-index: 2;
+  }
+ }
+ .intro-offer__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0 0 40px;
+ }
+
+ .intro-offer__thumb {
+  width: 50vw;
+  height: 100%;
+  background: no-repeat center / cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+ }
+
+ .intro-offer__title, .intro-offer__subtitle {
+  position: relative;
+  z-index: 2;
+ }
+ .intro-offer__title {
+  text-align: left;
+ }
+ .intro-offer__subtitle {
+  margin-top: 12px;
+ }
+
+ .intro-offer__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+
+  .intro-offer__header-left {
+   flex: 1;
+   padding-left: 15px;
+
+   .intro-offer__header-left-top {
+    width: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .intro-offer__header-left-bottom {
+
+   }
+  }
+  .intro-offer__header-right {
+   width: 300px;
+   padding-left: 40px;
+  }
+ }
+
+ .intro-offer__price {
+  font-size: 30px;
+  line-height: 42px;
+  color: #FFA200;
+
+  span {
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 59px;
+  }
+ }
+
+ .intro-offer__price-old {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-decoration-line: line-through;
+  color: #454545;
+ }
+
+ .intro-offer__discount {
+  position: relative;
+
+  .intro-offer__discount-text {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(246.94deg, #0FD3C8 3.58%, rgba(255, 255, 255, 0) 74.87%), #018DBD;
+   border-radius: 5px;
+   font-size: 15px;
+   line-height: 19px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #FFFFFF;
+   padding: 11px 12px 11px 42px;
+  }
+  .intro-offer__discount-amount {
+   width: 70px;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #FFFFFF;
+   border-radius: 50%;
+   border: 1px solid #FFA200;
+   font-size: 10px;
+   line-height: 14px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #FFA200;
+   padding: 10px;
+   position: absolute;
+   top: calc(50% - 35px);
+   left: -32px;
+  }
+ }
+
+ .intro-offer__main {
+  flex: 1;
+  margin-bottom: 20px;
+ }
+
+ .intro-offer__text {
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+ }
+
+ .intro-offer__footer {
+
+ }
+
+ .intro-offer__advantages {
+  display: flex;
+  border: 1px solid #BDBDBD;
+  padding: 17px 0;
+
+  .intro-offer__advantages-item {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   border-right: 1px solid #BDBDBD;
+   padding: 10px 20px;
+   &:nth-child(1) {
+    flex: initial;
+    width: 180px;
+   }
+   &:nth-child(3) {
+    flex: initial;
+    width: 166px;
+   }
+   &:last-child {
+    border-right: 0;
+   }
+
+   img {
+
+   }
+   p {
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 15px;
+   }
+  }
+ }
+
+ &.intro-offer--green {
+
+  .intro-offer__left:before {
+   background: #3CB54B;
+  }
+  .intro-offer__price {
+   color: #3CB54B;
+  }
+  .intro-offer__discount .intro-offer__discount-amount {
+   border-color: #3CB54B;
+   color: #3CB54B;
+  }
+ }
+}

@@ -1,0 +1,355 @@
+html {
+ min-height: 100vh;
+}
+
+body {
+ background: #ffffff;
+ font-family: Roboto, sans-serif;
+ color: #000000;
+ font-size: 15px;
+ line-height: normal;
+}
+
+.main-wrapper {
+ width: 1260px;
+ margin: 0 auto;
+ @include tablet {
+  width: 710px;
+ }
+ @include mobile {
+  width: 310px;
+ }
+
+ &.main-wrapper--p {
+  padding: 0 30px;
+ }
+}
+
+.main {
+ overflow-x: hidden;
+}
+
+.br-lg {
+ display: block;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lp {
+ display: none;
+ @include laptop {
+  display: block;
+ }
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lp-md {
+ display: none;
+ @include laptop {
+  display: block;
+ }
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lp-sm {
+ display: none;
+ @include laptop {
+  display: block;
+ }
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-lg-md {
+ display: block;
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-lg--sm {
+ display: block;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-md-sm {
+ display: none;
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-md {
+ display: none;
+ @include tablet {
+  display: block;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.br-sm {
+ display: none;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: block;
+ }
+}
+
+.br-sm-text {
+ display: none;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.inline-lg {
+ display: inline;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-lp {
+ display: none;
+ @include laptop {
+  display: inline;
+ }
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-lp-md {
+ display: none;
+ @include laptop {
+  display: inline;
+ }
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-lp-sm {
+ display: none;
+ @include laptop {
+  display: inline;
+ }
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.inline-lg-md {
+ display: inline;
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-md-sm {
+ display: none;
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.inline-md {
+ display: none;
+ @include tablet {
+  display: inline;
+ }
+ @include mobile {
+  display: none;
+ }
+}
+
+.inline-sm {
+ display: none;
+ @include tablet {
+  display: none;
+ }
+ @include mobile {
+  display: inline;
+ }
+}
+
+.hidden {
+ display: none;
+}
+
+.clear {
+ display: table;
+ clear: both;
+}
+
+p, h1, h2, h3, h4, h5, h6, img {
+ display: block;
+}
+
+a {
+ color: #000000;
+ text-decoration: none;
+ cursor: pointer;
+ transition: 0.5s;
+ &:hover {
+  color: #018DBD;
+ }
+}
+
+button {
+ background: none;
+ border: none;
+ transition: 0.5s;
+}
+
+em {
+ font-style: italic;
+}
+
+b, strong {
+ font-weight: 700;
+}
+
+input, textarea, select, .input, .textarea, .select {
+ width: 100%;
+ display: block;
+ border: none;
+ border-bottom: 1px solid #BDBDBD;
+ background: transparent;
+ color: #000000;
+ font-family: Roboto, sans-serif;
+ font-size: 14px;
+ outline: none;
+ transition: 0.5s;
+ padding: 10px 30px;
+
+ &.input--phone {
+  background: url(../img/common/phone-icon-2.svg) no-repeat center left;
+ }
+
+ &.input-box {
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 140%;
+  padding: 18px 17px;
+  &:focus, &:active {
+   border-color: #018DBD;
+  }
+ }
+}
+
+textarea {
+ resize: none;
+}
+
+select {
+ -webkit-appearance: none;
+ cursor: pointer;
+
+ &.input-box {
+  background: url(../img/common/dropdown-arrow.svg) no-repeat center right 20px, #fff;
+ }
+}
+
+label {
+ display: block;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+
+input[type=number] {
+ -moz-appearance:textfield;
+}
+
+select option:disabled {
+ color: #cccccc;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+ color: #cccccc;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: #cccccc;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: #cccccc;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #cccccc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #cccccc;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+ color: #cccccc;
+}
+
+input:-webkit-autofill {
+ -webkit-box-shadow: 0 0 0 30px white inset;
+}

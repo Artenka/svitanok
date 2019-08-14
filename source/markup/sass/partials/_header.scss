@@ -1,0 +1,241 @@
+.main-header {
+ flex: 0 0 auto;
+}
+
+.main-header-top {
+ background: #303030;
+ padding: 9px 0 10px;
+
+ > .main-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 345px;
+ }
+}
+
+.main-header-top-menu {
+ flex: 1;
+ display: flex;
+ align-items: center;
+
+ .main-header-top-menu__item {
+  margin-right: 30px;
+  position: relative;
+  &:last-child {
+   margin-right: 0;
+  }
+ }
+ .main-header-top-menu__item-counter {
+  top: -6px;
+  right: -10px;
+ }
+ .main-header-top-menu__item-link {
+  font-size: 16px;
+  color: #FFFFFF;
+ }
+}
+
+.main-header-top-info {
+ width: 315px;
+ display: flex;
+ transition: 0.2s;
+
+ background: #FFFFFF;
+ border: 1px solid #E5E5E5;
+ border-radius: 10px;
+ padding: 8px 35px 8px 16px;
+ position: absolute;
+ top: 0;
+ right: 0;
+
+ .main-header-top-info__left {
+  flex: 1;
+ }
+ .main-header-top-info__right {
+  padding-top: 10px;
+ }
+
+ .main-header-top-info__phone, .main-header-top-info__time {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  &:first-child {
+   margin-top: 0;
+  }
+
+  i {
+   width: 12px;
+   height: 19px;
+   background: no-repeat center / contain;
+   margin-right: 8px;
+  }
+  p, a {
+   font-size: 12px;
+  }
+ }
+
+ .main-header-top-info__phone i {
+  background-image: url(../img/common/phone-icon.svg);
+ }
+ .main-header-top-info__time i {
+  background-image: url(../img/common/clock-icon.svg);
+ }
+
+ .main-header-top-info__callback {
+  margin-top: 8px;
+ }
+
+ &.main-header-top-info--fixed {
+  position: fixed;
+  top: 100px;
+  right: calc(50% - 630px);
+  z-index: 50;
+ }
+}
+
+.header-cart-info {
+ cursor: pointer;
+
+ .header-cart-info__icon {
+  width: 40px;
+  height: 40px;
+  background: url(../img/common/cart-icon.svg) no-repeat center / contain;
+  position: relative;
+ }
+ .header-cart-info__counter {
+  top: 0;
+  right: -6px;
+ }
+
+ .header-cart-info__total {
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-top: 9px;
+ }
+}
+
+
+.main-header-middle {
+ padding: 16px 0 12px;
+
+ > .main-wrapper {
+  display: flex;
+  align-items: center;
+ }
+}
+
+.main-header-middle-list {
+ display: flex;
+ align-items: center;
+ margin-left: 90px;
+
+ .main-header-middle-list__item {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+  &:last-child {
+   margin-right: 0;
+  }
+
+  .main-header-middle-list__item-icon {
+   width: 14px;
+   height: 16px;
+   background: no-repeat center / contain;
+   margin-right: 12px;
+  }
+  .main-header-middle-list__item-text {
+   font-size: 14px;
+  }
+
+  &:nth-child(1) .main-header-middle-list__item-icon {
+   background-image: url(../img/common/return-icon.svg);
+  }
+  &:nth-child(2) .main-header-middle-list__item-icon {
+   width: 8px;
+   background-image: url(../img/common/dollar-icon.svg);
+  }
+  &:nth-child(3) .main-header-middle-list__item-icon {
+   width: 13px;
+   background-image: url(../img/common/pin-icon.svg);
+  }
+ }
+}
+
+
+.main-header-bottom {
+ width: 100%;
+ border-top: 1px solid #B6B5B5;
+ border-bottom: 1px solid #B6B5B5;
+ background: #fff;
+ padding: 18px 0;
+ position: relative;
+
+ &.main-header-bottom--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+ }
+}
+
+.main-header-bottom-list {
+ display: flex;
+ align-items: center;
+
+ .main-header-bottom-list__item {
+  min-width: 285px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+  &:before {
+   content: '';
+   width: 56px;
+   height: 5px;
+   background: #FFA200;
+   position: absolute;
+   bottom: -19px;
+   left: 0;
+   opacity: 0;
+  }
+  &:last-child {
+   margin-right: 0;
+  }
+  &:nth-child(2) {
+   &:before {
+    background: #3CB54B;
+   }
+  }
+  &:nth-child(3) {
+   &:before {
+    background: #018DBD;
+   }
+  }
+  &:nth-child(4) {
+   &:before {
+    background: #A62868;
+   }
+  }
+
+  .main-header-bottom-list__item-icon {
+   width: 56px;
+   height: 56px;
+   background: no-repeat center / cover;
+   margin-right: 14px;
+  }
+  .main-header-bottom-list__item-text {
+   font-size: 16px;
+   line-height: 20px;
+  }
+
+  &.main-header-bottom-list__item--active {
+   &:before {
+    opacity: 1;
+   }
+  }
+ }
+}

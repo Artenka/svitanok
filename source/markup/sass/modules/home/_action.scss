@@ -1,0 +1,53 @@
+.home-action {
+ background: url(../img/home/action/home-action-bg.jpg) no-repeat center, #F9F5F3;
+ padding: 45px 0 25px;
+}
+
+.home-action-main {
+ width: 540px;
+
+ .home-action-main__title {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.03em;
+ }
+ .home-action-main__subtitle {
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  margin-top: 12px;
+ }
+}
+
+.home-action-form {
+ margin-top: 46px;
+
+ .home-action-form__formgroup {
+  width: 500px;
+  display: flex;
+ }
+
+ .home-action-form__input {
+  flex: 1;
+  color: #0185BD;
+  margin-right: 30px;
+ }
+ .home-action-form__submit {
+  width: 200px;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+
+ .home-action-form__disclaimer {
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 27px;
+ }
+
+ .home-action-form__checkbox {
+  margin-top: 6px;
+ }
+}

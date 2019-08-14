@@ -1,0 +1,23 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#horizontal-blinds
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Горизонтальные жалюзи
+
+    include ../pages-partials/horizontal-blinds/intro-offer
+    include ../pages-partials/horizontal-blinds/products
+    include ../pages-partials/home/action
+    include ../pages-partials/horizontal-blinds/advantages
+    include ../pages-partials/horizontal-blinds/about
+    include ../partials/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

@@ -1,0 +1,23 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#vertical-blinds
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item вертикальные жалюзи
+
+    include ../pages-partials/vertical-blinds/intro-offer
+    include ../pages-partials/vertical-blinds/description
+    include ../pages-partials/vertical-blinds/vertical-blinds-about
+    include ../pages-partials/vertical-blinds/advantages
+    include ../pages-partials/vertical-blinds/about
+    include ../partials/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

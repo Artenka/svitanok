@@ -1,0 +1,23 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#roller-blinds
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Рулонные шторы
+
+    include ../pages-partials/roller-blinds/intro-offer
+    include ../pages-partials/roller-blinds/products
+    include ../pages-partials/home/action
+    include ../pages-partials/roller-blinds/advantages
+    include ../pages-partials/roller-blinds/about
+    include ../partials/cost-calculator
+    include ../pages-partials/roller-blinds/portfolio
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

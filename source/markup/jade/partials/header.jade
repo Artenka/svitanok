@@ -1,0 +1,77 @@
+header.main-header
+  .main-header-top
+    .main-wrapper
+      ul.main-header-top-menu
+        li.main-header-top-menu__item
+          a(href="#").main-header-top-menu__item-link О нас
+        li.main-header-top-menu__item
+          .main-header-top-menu__item-counter.counter 4
+          a(href="#").main-header-top-menu__item-link Акции
+        li.main-header-top-menu__item
+          a(href="#").main-header-top-menu__item-link Работы и отзывы
+        li.main-header-top-menu__item
+          a(href="#").main-header-top-menu__item-link Контакты
+
+      .search
+        input(type="search" placeholder="Отследить номер заказа")
+
+      .main-header-top-info
+        .main-header-top-info__left
+          .main-header-top-info__phone
+            i
+            a(href="tel:+380577517507") +38(057) 751 75 07
+          .main-header-top-info__time
+            i
+            p Пн-Вс: с 9.00 до 20.00
+          .btn.btn--sm.main-header-top-info__callback Заказать звонок
+        .main-header-top-info__right
+          .header-cart-info.popup-link(onclick="showPopup('#popup-cart')")
+            .header-cart-info__icon
+              .header-cart-info__counter.counter 4
+            h3.header-cart-info__total 2 567 грн
+
+  .main-header-middle
+    .main-wrapper
+      .logo
+      .main-header-middle-list
+        a(href="#").main-header-middle-list__item.main-header-middle-list__item--1
+          .main-header-middle-list__item-icon
+          p.main-header-middle-list__item-text Более 1 000 тканей
+        a(href="#").main-header-middle-list__item.main-header-middle-list__item--2
+          .main-header-middle-list__item-icon
+          p.main-header-middle-list__item-text Скидки для льготных групп
+        a(href="/showroom.html").main-header-middle-list__item.main-header-middle-list__item--3
+          .main-header-middle-list__item-icon
+          p.main-header-middle-list__item-text Шоу-румы
+
+  .main-header-bottom
+    .main-wrapper
+      .main-header-bottom-list
+        a(href="#").main-header-bottom-list__item.main-header-bottom-list__item--active
+          .main-header-bottom-list__item-icon(style="background-image: url(img/common/header/header-bottom-list-item-1.jpg)")
+          p.main-header-bottom-list__item-text Внутренние<br> солнцезащитные системы
+        a(href="#").main-header-bottom-list__item.main-header-bottom-list__item--active
+          .main-header-bottom-list__item-icon(style="background-image: url(img/common/header/header-bottom-list-item-2.jpg)")
+          p.main-header-bottom-list__item-text Наружные<br> солнцезащитные системы
+        a(href="#").main-header-bottom-list__item.main-header-bottom-list__item--active
+          .main-header-bottom-list__item-icon(style="background-image: url(img/common/header/header-bottom-list-item-3.jpg)")
+          p.main-header-bottom-list__item-text Пластиковые<br> окна
+        a(href="#").main-header-bottom-list__item.main-header-bottom-list__item--active
+          .main-header-bottom-list__item-icon(style="background-image: url(img/common/header/header-bottom-list-item-4.jpg)")
+          p.main-header-bottom-list__item-text Секционные<br> ворота
+
+
+script.
+  $(function(){
+    var top;
+    $(window).scroll(function () {
+      top = $(document).scrollTop();
+      if(top > 108) {
+        $('.main-header-bottom').addClass('main-header-bottom--fixed');
+        $('.main-header-top-info').addClass('main-header-top-info--fixed');
+      } else {
+        $('.main-header-bottom').removeClass('main-header-bottom--fixed');
+        $('.main-header-top-info').removeClass('main-header-top-info--fixed');
+      }
+    });
+  });

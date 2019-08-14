@@ -1,0 +1,20 @@
+.vertical-blinds-about-section {
+ background: url(../img/common/ornament-6.svg) no-repeat top -70px left calc(50% - 760px);
+}
+
+.vertical-blinds-about {
+ display: flex;
+ justify-content: space-between;
+ padding-left: 72px;
+
+ .vertical-blinds-about__content {
+  width: 645px;
+  padding: 70px 0 40px;
+ }
+
+ .vertical-blinds-about__thumb {
+  width: 485px;
+  height: 350px;
+  background: url(../img/vertical-blinds/vertical-blinds-about/vertical-blinds-about-thumb.jpg) no-repeat center / cover;
+ }
+}

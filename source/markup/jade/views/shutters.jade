@@ -1,0 +1,20 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#shutters
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Внутренние солнцезащитные системы
+        p.breadcrumbs__item Рольставни
+
+    include ../pages-partials/shutters/intro-offer
+    include ../pages-partials/shutters/about-1
+    include ../pages-partials/shutters/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

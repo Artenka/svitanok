@@ -1,0 +1,50 @@
+.common-about {
+ background: url(../img/common/ornament-4.svg) no-repeat top right calc(50% - 580px);
+ padding-top: 20px;
+
+ &.common-about--2 {
+
+  .common-about-main .common-about-main__content {
+   padding-top: 17px;
+  }
+ }
+}
+
+.common-about-main {
+ display: flex;
+ align-items: flex-start;
+
+ .common-about-main__image {
+  width: 540px;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: no-repeat center / cover;
+  padding: 25px 50px;
+  position: relative;
+  &:before {
+   content: '';
+   width: 10px;
+   height: 76px;
+   background: #FFA200;
+   position: absolute;
+   top: 15px;
+   right: -5px;
+  }
+
+  .video-btn {
+   width: 415px;
+  }
+ }
+
+ .common-about-main__content {
+  flex: 1;
+  padding: 80px 60px 0 70px;
+
+  p {
+   line-height: 140%;
+   margin-top: 12px;
+  }
+ }
+}

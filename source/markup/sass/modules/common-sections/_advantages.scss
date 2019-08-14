@@ -1,0 +1,49 @@
+.advantages-section {
+
+}
+
+.advantages-slider {
+
+}
+
+.advantages-slide {
+
+}
+
+.advantages-slide-inner {
+ height: 540px;
+ background: no-repeat center / cover;
+
+ > .main-wrapper.main-wrapper--p {
+  padding: 155px 90px 0 650px;
+ }
+
+ .title {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  &:before {
+   content: '';
+   width: 220px;
+   height: 1px;
+   background: #FFA200;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+  }
+ }
+
+ p {
+  line-height: 140%;
+ }
+
+ &.advantages-slide-inner--center {
+  text-align: center;
+
+  .title {
+   &:before {
+    left: calc(50% - 110px);
+   }
+  }
+ }
+}
