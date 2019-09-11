@@ -1,0 +1,136 @@
+.inner-about-section {
+ margin-top: 25px;
+}
+
+.inner-about {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.inner-about-item {
+ width: 50%;
+ height: 196px;
+ border-collapse: collapse;
+ border: 1px solid #000000;
+ display: flex;
+ &:nth-child(4n+3), &:nth-child(4n+4) {
+
+  .inner-about-item__thumb {
+   order: 2;
+   border-right: none;
+   border-left: 1px solid #000;
+   &:before {
+    right: auto;
+    left: -4px;
+   }
+  }
+  .inner-about-item__content {
+   order: 1;
+  }
+ }
+
+ .inner-about-item__thumb {
+  width: 183px;
+  border-right: 1px solid #000;
+  background: no-repeat center / cover;
+  position: relative;
+  &:before {
+   content: '';
+   width: 8px;
+   height: 36px;
+   background: #FFA200;
+   position: absolute;
+   top: 20px;
+   right: -4px;
+  }
+ }
+
+ .inner-about-item__video-btn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  margin: 0;
+ }
+
+ .inner-about-item__content {
+  flex: 1;
+  padding: 17px 25px;
+ }
+
+ .inner-about-item__title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+ }
+
+ .inner-about-item__text {
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  margin-top: 10px;
+ }
+}
+
+
+.inner-portfolio-section {
+ margin: 55px 0 35px;
+}
+
+
+.toggler-tabs {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ .toggler-tabs__btn {
+  margin: 0 32px;
+ }
+
+ .toggler-tab {
+  flex: 1;
+  &:nth-child(1) {
+   text-align: right;
+  }
+ }
+}
+
+.toggler-tab {
+ font-size: 19px;
+ line-height: 140%;
+ letter-spacing: 0.02em;
+ color: #909090;
+ cursor: pointer;
+
+ &.toggler-tab--active {
+  color: #000;
+ }
+}
+
+
+.toggler-content-tabs {
+ margin-top: 35px;
+}
+
+.toggler-content-tab {
+ display: none;
+
+ &.toggler-content-tab--active {
+  display: block;
+ }
+}
+
+.inner-portfolio-slider {
+
+}
+
+.inner-portfolio-slide {
+ padding: 0 2px;
+
+ .inner-portfolio-slide__inner {
+  height: 305px;
+  background: no-repeat center / cover;
+ }
+}

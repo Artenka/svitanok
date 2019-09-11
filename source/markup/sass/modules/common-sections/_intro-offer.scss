@@ -61,6 +61,7 @@
  }
  .intro-offer__subtitle {
   margin-top: 12px;
+  padding-right: 10px;
  }
 
  .intro-offer__header {
@@ -89,8 +90,9 @@
  }
 
  .intro-offer__price {
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 36px;
+  line-height: 59px;
+  font-weight: 700;
   color: #FFA200;
 
   span {
@@ -155,6 +157,7 @@
   font-size: 13px;
   line-height: 150%;
   letter-spacing: 0.03em;
+  white-space: pre-line;
  }
 
  .intro-offer__footer {

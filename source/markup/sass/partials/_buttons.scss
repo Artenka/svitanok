@@ -54,3 +54,42 @@
   color: #fff;
  }
 }
+
+.btn-section {
+ background: url(../img/common/btn-section-bg.svg) no-repeat center left, #FBF5F3;
+ padding: 23px 0;
+ margin: 12px 0;
+
+ .main-wrapper {
+  display: flex;
+  justify-content: center;
+ }
+}
+
+.toggler-btn {
+ width: 84px;
+ height: 38px;
+ background: #FFFFFF;
+ border: 1px solid #FFA200;
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+ border-radius: 25px;
+ position: relative;
+ cursor: pointer;
+ &:before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #FFA200;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: 6px;
+  transition: 0.5s;
+ }
+
+ &.toggler-btn--right {
+  &:before {
+   left: calc(100% - 34px);
+  }
+ }
+}

@@ -3,7 +3,7 @@ section.section.home-portfolio
     h2.title Примеры наших работ
     h3.subtitle За 4 года нам удалось порадовать качественной продукцией более 2 000 человек
 
-    .home-portfolio-tabs
+    .home-portfolio-tabs.home-portfolio-tabs--home
       .home-portfolio-tabs__item.home-portfolio-tabs__item--active(data-item="1") Внутренние<br> солнцезащитные системы
       .home-portfolio-tabs__item(data-item="2") Наружные<br> солнцезащитные системы
       .home-portfolio-tabs__item(data-item="3") Секционные<br> ворота
@@ -123,8 +123,3 @@ section.section.home-portfolio
             .home-portfolio-gallery__image(style="background-image: url(img/home/portfolio/home-portfolio-image-2.jpg)")
             .home-portfolio-gallery__image.home-portfolio-gallery__image--text Еще примеры
 
-
-  script.
-    $(function(){
-      changeTabs('home-portfolio-tabs__item', 'home-portfolio-content-tabs__item');
-    });

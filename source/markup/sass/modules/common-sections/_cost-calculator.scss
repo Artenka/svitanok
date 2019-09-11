@@ -24,7 +24,7 @@
   > h2 {
    font-size: 32px;
 
-   span {
+   span, b {
     font-weight: 700;
     color: #FFA200;
    }
@@ -33,6 +33,7 @@
    margin-top: 30px;
   }
   > p {
+   width: 230px;
    font-size: 11px;
    line-height: 15px;
    color: #000000;
@@ -48,8 +49,11 @@
 
  &.cost-calculator-main--green {
 
-  .cost-calculator-main__content > h2 span {
-   color: #3CB54B;
+  .cost-calculator-main__content > h2 {
+
+   span, b {
+    color: #3CB54B;
+   }
   }
  }
 }

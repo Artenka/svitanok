@@ -13,7 +13,8 @@
  .home-about-2-main__right {
   width: 435px;
   position: relative;
-  &:before {
+
+  .home-about-2-main__right-image {
    content: '';
    width: 485px;
    height: 100%;

@@ -12,7 +12,8 @@
   justify-content: space-between;
   padding: 95px 0 50px;
   position: relative;
-  &:before {
+
+  .home-about-1-main__left-image {
    content: '';
    width: 485px;
    height: 100%;

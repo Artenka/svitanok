@@ -28,6 +28,11 @@ script.
       hidePopup();
     });
 
+    // toggler btn toggle
+    $('.toggler-btn').click(function(){
+      $(this).toggleClass('toggler-btn--right');
+    });
+
     //phone flags
     $("input[type=tel]").intlTelInput({
       utilsScript: 'js/utils.js',
@@ -103,6 +108,31 @@ script.
     $('.quantity__plus').click(function(){
       $quantityNum = $(this).closest('.quantity').find('.quantity__number');
       $quantityNum.val(+$quantityNum.val() + 1);
+    });
+
+    // toogler tabs script
+    $('.toggler-tab').click(function () {
+      if (!$(this).hasClass('toggler-tab--active')) {
+        $('.toggler-tabs__btn').toggleClass('toggler-btn--right');
+      }
+    });
+    changeTabs('toggler-tab', 'toggler-content-tab');
+    $('.toggler-tabs__btn').click(function () {
+      $('.toggler-tab').toggleClass('toggler-tab--active');
+      $('.toggler-content-tab').toggleClass('toggler-content-tab--active');
+    });
+
+    // portfolio change tabs
+    changeTabs('home-portfolio-tabs__item', 'home-portfolio-content-tabs__item');
+
+    // inner portfolio slider
+    $('.inner-portfolio-slider').slick({
+      adaptiveHeight: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false
     });
   });
 

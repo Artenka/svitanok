@@ -101,7 +101,6 @@
   height: 60px;
   border-radius: 50%;
   background: #E60D36;
-  margin-right: 25px;
   transition: 0.5s;
   position: relative;
   &:before {
@@ -122,6 +121,7 @@
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  margin-left: 25px;
  }
 
  &.video-btn--download {
