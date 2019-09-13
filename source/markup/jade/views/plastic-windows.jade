@@ -1,0 +1,22 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#plastic-windows
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Пластиковые окна
+
+    include ../pages-partials/plastic-windows/intro-offer
+    include ../pages-partials/plastic-windows/about-1
+    include ../pages-partials/home/action
+    include ../pages-partials/plastic-windows/advantages
+    include ../pages-partials/plastic-windows/prices
+    include ../pages-partials/plastic-windows/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action-2
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer

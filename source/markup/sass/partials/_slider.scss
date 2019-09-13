@@ -109,3 +109,27 @@
   }
  }
 }
+
+.slick--blue {
+
+ &.slick--arrows-1 {
+
+  .slick-arrow {
+   background: url(../img/common/arrow-right-4.svg) no-repeat center, #018DBD;
+  }
+ }
+
+ &.slick--dots-1 {
+
+  .slick-dots {
+
+   > li {
+    border-color: #018DBD;
+
+    &.slick-active {
+     background: #018DBD;
+    }
+   }
+  }
+ }
+}

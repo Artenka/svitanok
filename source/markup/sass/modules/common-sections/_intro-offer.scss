@@ -214,4 +214,17 @@
    color: #3CB54B;
   }
  }
+ &.intro-offer--blue {
+
+  .intro-offer__left:before {
+   background: #018DBD;
+  }
+  .intro-offer__price {
+   color: #018DBD;
+  }
+  .intro-offer__discount .intro-offer__discount-amount {
+   border-color: #018DBD;
+   color: #018DBD;
+  }
+ }
 }

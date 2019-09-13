@@ -1,0 +1,125 @@
+.plastic-windows-prices-section {
+ padding: 60px 0 0;
+
+ .title {
+  text-align: center;
+ }
+}
+
+.plastic-windows-prices-tabs {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: #FFFFFF;
+ border: 1px solid #BDBDBD;
+ padding: 11px 0;
+ margin-top: 30px;
+}
+
+.plastic-windows-prices-tab {
+ width: 172px;
+ min-height: 53px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-right: 1px solid #BDBDBD;
+ font-size: 14px;
+ line-height: 140%;
+ letter-spacing: 0.03em;
+ color: #4F4F4F;
+ text-align: center;
+ padding: 0 10px;
+ position: relative;
+ cursor: pointer;
+ transition: 0.3s;
+ &:before {
+  content: '';
+  width: 82px;
+  height: 5px;
+  background: #018DBD;
+  position: absolute;
+  bottom: -14px;
+  left: calc(50% - 41px);
+  opacity: 0;
+  transition: 0.3s;
+ }
+ &:last-child {
+  border-right: 0;
+ }
+
+ &.plastic-windows-prices-tab--active {
+  color: #018DBD;
+  &:before {
+   opacity: 1;
+  }
+ }
+}
+
+
+.plastic-windows-prices-content-tabs {
+ background: #FFFFFF;
+ border: 1px solid #BDBDBD;
+ border-top: none;
+ padding: 30px 50px;
+}
+
+.plastic-windows-prices-content-tab {
+ display: none;
+
+ &.plastic-windows-prices-content-tab--active {
+  display: block;
+ }
+}
+
+.plastic-windows-prices-list {
+ display: flex;
+}
+
+.plastic-windows-prices-item {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ margin-right: 140px;
+ &:nth-child(3n+3) {
+  margin-right: 0;
+ }
+
+ .plastic-windows-prices-item__title {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .plastic-windows-prices-item__image {
+  width: auto;
+  height: 206px;
+  margin-top: 7px;
+ }
+
+ .plastic-windows-prices-item__about {
+  margin-top: 13px;
+ }
+
+ .plastic-windows-prices-item__price {
+  font-size: 19px;
+  line-height: 140.62%;
+  letter-spacing: 0.01em;
+  color: #018DBD;
+  margin-top: 35px;
+
+  span, b {
+   font-weight: 700;
+   font-size: 32px;
+  }
+ }
+
+ .plastic-windows-prices-item__btn {
+
+ }
+
+ .plastic-windows-prices-item__bottom-text {
+  margin-top: 7px;
+ }
+}

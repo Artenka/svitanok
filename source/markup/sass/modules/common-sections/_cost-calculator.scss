@@ -56,4 +56,13 @@
    }
   }
  }
+ &.cost-calculator-main--blue {
+
+  .cost-calculator-main__content > h2 {
+
+   span, b {
+    color: #018DBD;
+   }
+  }
+ }
 }
