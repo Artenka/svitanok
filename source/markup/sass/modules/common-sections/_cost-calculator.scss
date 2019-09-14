@@ -65,4 +65,13 @@
    }
   }
  }
+ &.cost-calculator-main--violet {
+
+  .cost-calculator-main__content > h2 {
+
+   span, b {
+    color: #A62868;
+   }
+  }
+ }
 }

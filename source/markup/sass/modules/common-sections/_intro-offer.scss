@@ -90,14 +90,14 @@
  }
 
  .intro-offer__price {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 59px;
   font-weight: 700;
   color: #FFA200;
 
   span {
    font-weight: 700;
-   font-size: 42px;
+   font-size: 39px;
    line-height: 59px;
   }
  }
@@ -225,6 +225,19 @@
   .intro-offer__discount .intro-offer__discount-amount {
    border-color: #018DBD;
    color: #018DBD;
+  }
+ }
+ &.intro-offer--violet {
+
+  .intro-offer__left:before {
+   background: #A62868;
+  }
+  .intro-offer__price {
+   color: #A62868;
+  }
+  .intro-offer__discount .intro-offer__discount-amount {
+   border-color: #A62868;
+   color: #A62868;
   }
  }
 }

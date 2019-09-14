@@ -1,0 +1,19 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#sectional-doors
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        a(href="#").breadcrumbs__item Секционные ворота
+
+    include ../pages-partials/sectional-doors/intro-offer
+    include ../pages-partials/sectional-doors/about-1
+    include ../pages-partials/sectional-doors/cost-calculator
+    include ../partials/portfolio-1
+    include ../pages-partials/home/action
+    include ../pages-partials/home/reviews
+
+  include ../partials/footer
