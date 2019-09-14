@@ -1,0 +1,18 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#success
+    .main-wrapper
+      .success
+        h1.title Благодарим за покупку!
+        p Наш менеджер свяжется с Вами в течении 30 минут для подтверждения заказа! Приятного дня!
+        a(href="/").btn Вернуться на главную
+
+
+    include ../partials/certificates
+
+  include ../partials/footer
+
+

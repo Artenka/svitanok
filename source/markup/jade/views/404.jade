@@ -1,0 +1,16 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#404
+    .error-404
+      h2.title Страница не найдена
+      h1 404
+      a(href="/").btn Вернуться на главную
+
+
+    include ../partials/certificates
+
+  include ../partials/footer
+
