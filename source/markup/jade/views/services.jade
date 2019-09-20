@@ -1,0 +1,62 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#services
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        p.breadcrumbs__item Сервис
+
+    .main-wrapper
+      h1.title-big сервисы и услуги
+
+    section.section.services-section
+      .main-wrapper.main-wrapper--p
+        .services
+          .services-item(style="background-image: url(img/services/services-item-1.jpg)")
+            h2.services-item__title Услуга<br> «Мобильный офис»
+            .services-item__text
+              | Наши мобильные менеджеры приедут к вам
+              br
+              | с образцами товаров, сделают все необходимые
+              br
+              | замеры и расчет стоимости заказа.
+              br
+              br
+              | Возможно заключение договора и оплата на месте.
+          .services-item(style="background-image: url(img/services/services-item-2.jpg)")
+            h2.services-item__title Программа<br> «Вся Країна»
+            .services-item__text
+              | Благодаря партнёрству с «Новой почтой» и «Интайм», мы предоставляем бесплатную доставку в любой уголок Украины при заказе от 1 000 гривен.
+          .services-item(style="background-image: url(img/services/services-item-3.jpg)")
+            h2.services-item__title Профессиональный монтаж
+            .services-item__text
+              | Бригады проходят специальное обучение несколько раз в год, опыт каждого дизайнера-замерщика болеее 5 лет. Они также проведут консультацию по обслуживанию и эксплуатации.
+          .services-item(style="background-image: url(img/services/services-item-4.jpg)")
+            h2.services-item__title комплект документации для работы с НДС
+            .services-item__text
+              | Мы предоставляем сертификаты качества  и санитарно-гигиенические документы.
+              br
+              br
+              | Составляем гарантийные паспорта на продукцию соответствующую ДСТУ.
+          .services-item(style="background-image: url(img/services/services-item-5.jpg)")
+            h2.services-item__title Услуга<br> «TRADE IN»
+            .services-item__text
+              | Вы можете заменить свою старую рулонную штору на новую, заплатив лишь за ткань. Услугу проводят наши заказчики, у которых установлены рулонные шторы ТМ «Svitanok»
+          .services-item(style="background-image: url(img/services/services-item-6.jpg)")
+            h2.services-item__title БЫСТРАЯ И УДОБНАЯ<br> ОПЛАТА
+            .services-item__text
+              | Заключить договор и произвести оплату Вы можете  на месте, непосредственно в день приезда замерщика. Ваш заказ в этот же день будет запущен  в производство.
+
+        a(href="#").btn.services-btn показать еще
+
+
+    include ../partials/more
+    include ../partials/certificates
+
+
+  include ../partials/footer
+
+

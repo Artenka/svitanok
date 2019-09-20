@@ -28,11 +28,6 @@ script.
       hidePopup();
     });
 
-    // toggler btn toggle
-    $('.toggler-btn').click(function(){
-      $(this).toggleClass('toggler-btn--right');
-    });
-
     //phone flags
     $("input[type=tel]").intlTelInput({
       utilsScript: 'js/utils.js',
@@ -108,6 +103,11 @@ script.
     $('.quantity__plus').click(function(){
       $quantityNum = $(this).closest('.quantity').find('.quantity__number');
       $quantityNum.val(+$quantityNum.val() + 1);
+    });
+
+    // toggler btn toggle
+    $('.toggler-btn').click(function () {
+      $(this).toggleClass('toggler-btn--right');
     });
 
     // toogler tabs script
