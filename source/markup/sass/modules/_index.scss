@@ -264,6 +264,31 @@ b, strong {
  font-weight: 700;
 }
 
+.ul {
+
+ li {
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  padding-left: 30px;
+  margin-bottom: 19px;
+  position: relative;
+  &:before {
+   content: '';
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #FFA200;
+   position: absolute;
+   top: 4px;
+   left: 8px;
+  }
+  &:last-child {
+   margin-bottom: 0;
+  }
+ }
+}
+
 input, textarea, select, .input, .textarea, .select {
  width: 100%;
  display: block;
