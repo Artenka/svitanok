@@ -1,0 +1,96 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#discounts
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        p.breadcrumbs__item Акции
+
+    section.section.discounts-banner-section
+      .main-wrapper.main-wrapper--p
+        h1.title-big наши акции
+        .discounts-banner(style="background-image: url(img/discounts/banner/banner-1.jpg)")
+          .discounts-banner__date С 18 июня до 23 июля 2018
+          .discounts-banner__title
+            | ВЕСНА Дарит скидки !
+            br
+            span на пластиковые окна
+          a(href="#").btn.btn--white.discounts-banner__btn подробнее
+
+    section.section.discounts-section
+      .main-wrapper.main-wrapper--p
+        .home-products-list
+          .home-products-slide.home-products-slide--lg
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/discounts/discounts-item-1.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 августа 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description Скидка на все виды жалюзи, только этой весной!
+                .btn.home-products-slide-inner__btn Подробнее
+          .home-products-slide.home-products-slide--lg
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/discounts/discounts-item-2.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 августа 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description Готовимся к лету вместе с нами! Перголы со скидкой до  40%
+                .btn.home-products-slide-inner__btn Подробнее
+          .home-products-slide.home-products-slide--lg
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/discounts/discounts-item-3.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 августа 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description Заменим старые жалюзи на новые! Со скидкой!
+                .btn.home-products-slide-inner__btn Подробнее
+          .home-products-slide.home-products-slide--lg
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/discounts/discounts-item-4.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 августа 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description При остеклении балкона - скидка на пластиковые окна!
+                .btn.home-products-slide-inner__btn Подробнее
+
+    section.section.discounts-archive-section
+      .main-wrapper.main-wrapper--p
+        h2.title Наши архивные акции
+        .home-products-slider.home-products-slider--md
+          .home-products-slide
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/archive/discounts-archive-item-1.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 июля<br> 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description Скидка 20% на маркизы!
+                .btn.home-products-slide-inner__btn Подробнее
+          .home-products-slide
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/archive/discounts-archive-item-2.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 июля<br> 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description Специальные цена на ворота серии «Trend»
+                .btn.home-products-slide-inner__btn Подробнее
+          .home-products-slide
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/archive/discounts-archive-item-3.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 июля<br> 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description Простой кредит на окна!
+                .btn.home-products-slide-inner__btn Подробнее
+          .home-products-slide
+            a(href="#").home-products-slide-inner(style="background-image: url(img/discounts/archive/discounts-archive-item-3.jpg)")
+              .home-products-slide-inner__top.home-products-slide-inner__top--1
+                h2.home-products-slide-inner__title-big С 18 июня до 23 июля<br> 2018
+              .home-products-slide-inner__bottom
+                p.home-products-slide-inner__description Простой кредит на окна!
+                .btn.home-products-slide-inner__btn Подробнее
+
+
+
+    include ../partials/action-3
+    include ../partials/more
+    include ../partials/certificates
+
+
+  include ../partials/footer
+
