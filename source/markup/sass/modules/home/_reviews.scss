@@ -14,10 +14,20 @@
  display: flex;
  flex-wrap: wrap;
  margin-top: 25px;
+
+ &.home-reviews-list--grid {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-auto-rows: 265px;
+  grid-auto-flow: row dense;
+  grid-gap: 30px;
+ }
 }
 
 .home-reviews-item {
  width: 380px;
+ display: flex;
+ flex-direction: column;
  background: #FFFFFF;
  border: 1px solid #BDBDBD;
  padding: 20px 30px;
@@ -27,7 +37,7 @@
  }
 
  .home-reviews-item__main {
-
+  flex: 1;
  }
  .home-reviews-item__footer {
   border-top: 1px solid #BDBDBD;
@@ -87,6 +97,10 @@
   .home-reviews-item__author-stars {
 
   }
+ }
+
+ &.home-reviews-item--1_2 {
+  grid-row: span 2;
  }
 }
 

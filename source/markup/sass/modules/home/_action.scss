@@ -1,6 +1,11 @@
 .home-action {
  background: url(../img/home/action/home-action-bg.jpg) no-repeat center, #F9F5F3;
  padding: 45px 0 25px;
+
+ &.home-action--3 {
+  background: url(../img/home/action/home-action-bg-3.jpg);
+  margin: 20px 0;
+ }
 }
 
 .home-action-main {

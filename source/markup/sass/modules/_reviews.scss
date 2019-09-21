@@ -1,0 +1,38 @@
+#reviews {
+
+}
+
+.reviews-video-section {
+ margin: 20px 0;
+}
+
+.reviews-video {
+ height: 535px;
+ background: no-repeat center / cover, #F6F7F7;
+ position: relative;
+
+ .reviews-video__play {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+
+  .reviews-video__play-icon {
+
+  }
+
+  .reviews-video__play-text {
+   width: 530px;
+   font-style: italic;
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 120%;
+   letter-spacing: 0.03em;
+   color: #000000;
+   position: absolute;
+   top: -7px;
+   left: 92px;
+  }
+ }
+}
