@@ -1,0 +1,28 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#about
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        p.breadcrumbs__item О нас
+
+    .main-wrapper.main-wrapper--p
+      h1.title-big о нас
+    br
+    br
+
+    include ../pages-partials/about/about
+    include ../pages-partials/about/reviews
+    include ../pages-partials/about/catalog
+    include ../pages-partials/about/video
+    include ../partials/more
+    include ../pages-partials/about/founder
+    include ../partials/action-3
+    include ../partials/certificates
+
+
+  include ../partials/footer
+

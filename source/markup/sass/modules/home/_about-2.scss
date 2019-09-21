@@ -25,6 +25,18 @@
   }
  }
 
+ .home-about-2-main__right-text {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  padding: 20px 40px 20px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ }
+
  .home-about-2-main__title {
 
  }
@@ -48,9 +60,23 @@
    left: -26px;
    z-index: 0;
   }
+
+  a {
+   color: #018DBD;
+   &:hover {
+    color: #018DBD;
+   }
+  }
  }
 
  .home-about-2-main__btn {
   margin-top: 26px;
+ }
+
+ .home-about-2-main__signature {
+  width: 141px;
+  height: 84px;
+  background: url(../img/about/founder/founder-signature.png) no-repeat center / contain;
+  margin-top: 20px;
  }
 }

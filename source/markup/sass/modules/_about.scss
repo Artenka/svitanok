@@ -1,0 +1,102 @@
+#about {
+
+ .reviews-video-section {
+  margin: 10px 0;
+ }
+
+ .home-about-2 {
+  background: url(../img/about/founder/founder-ornament.svg) no-repeat top 30px left calc(50% + 140px);
+
+  .home-about-2-main__left {
+   padding-right: 115px;
+  }
+  .home-about-2-main__right {
+   width: 480px;
+  }
+  .home-about-2-main__right-image {
+   width: 525px;
+   background-image: url(../img/about/founder/founder-photo.jpg);
+  }
+ }
+}
+
+.about-reviews-section {
+ margin-top: 75px;
+
+ .advantages-slider {
+  margin-top: 25px;
+ }
+}
+
+.about-catalog-section {
+ background: url(../img/about/catalog/about-catalog-bg.svg) no-repeat center top, #FBF5F3;
+ padding: 30px 0 15px;
+ margin: 10px 0;
+}
+
+.about-catalog {
+ display: flex;
+ align-items: flex-start;
+ margin-top: 30px;
+
+ .about-catalog__col {
+  flex: 1;
+ }
+}
+
+.about-catalog-title {
+ font-weight: bold;
+ font-size: 16px;
+ line-height: 20px;
+ letter-spacing: 0.03em;
+ color: #FFA200;
+ margin: 40px 0 25px;
+ &:first-child {
+  margin-top: 0;
+ }
+
+ &.about-catalog-title--green {
+  color: #3CB54B;
+ }
+ &.about-catalog-title--blue {
+  color: #018DBD;
+ }
+ &.about-catalog-title--violet {
+  color: #A62868;
+ }
+}
+
+.about-catalog-item {
+ display: flex;
+ align-items: center;
+ margin-bottom: 25px;
+ &:last-child {
+  margin-bottom: 0;
+ }
+
+ .about-catalog-item__thumb {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  margin-right: 10px;
+ }
+
+ .about-catalog-item__content {
+
+ }
+
+ .about-catalog-item__name {
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #000;
+  margin: 3px 0;
+ }
+ .about-catalog-item__link {
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #B6B5B5;
+ }
+}
