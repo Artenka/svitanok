@@ -48,6 +48,26 @@
  }
 }
 
+.info-block-phones {
+ padding: 0 45px;
+}
+
+.info-block-phone {
+ display: flex;
+ align-items: center;
+ margin-bottom: 7px;
+ &:before {
+  content: '';
+  width: 11px;
+  height: 19px;
+  background: url(../img/common/mobile-icon.svg) no-repeat center / contain;
+  margin-right: 18px;
+ }
+ &:last-child {
+  margin-bottom: 0;
+ }
+}
+
 .section-showroom-main {
  margin-top: 40px;
 }

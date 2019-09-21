@@ -1,0 +1,156 @@
+.contacts-intro-section {
+
+ .info-blocks {
+  margin-top: 30px;
+ }
+}
+
+
+.contacts-offices-section {
+ margin: 44px 0 0;
+}
+
+.contacts-offices-title {
+ text-align: center;
+}
+
+.contacts-offices-tabs {
+ display: flex;
+ border: 1px solid #BDBDBD;
+ padding: 12px 0;
+ margin-top: 28px;
+}
+.contacts-offices-tab {
+ width: 25%;
+ min-height: 53px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-right: 1px solid #BDBDBD;
+ text-align: center;
+ position: relative;
+ cursor: pointer;
+ &:before {
+  content: '';
+  width: 82px;
+  height: 5px;
+  background: #FFA200;
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 41px);
+  opacity: 0;
+  transition: 0.4s;
+ }
+ &:last-child {
+  border-right: none;
+ }
+
+ .contacts-offices-tab__icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  svg {
+   display: block;
+   width: auto;
+   height: 100%;
+
+   path, rect {
+    fill: #4F4F4F;
+    transition: 0.4s;
+   }
+  }
+ }
+ .contacts-offices-tab__name {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #4F4F4F;
+  transition: 0.4s;
+ }
+
+ .contacts-offices-tab-list {
+
+ }
+
+ .contacts-offices-tab-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  &:nth-child(2) {
+
+   svg {
+
+    path, rect {
+     fill: #A62868;
+    }
+   }
+
+   p {
+    color: #A62868;
+   }
+  }
+
+  i {
+   width: 10px;
+   height: 10px;
+   margin-right: 10px;
+
+   svg {
+    display: block;
+    width: auto;
+    height: 100%;
+
+    path, rect {
+     fill: #018DBD;
+    }
+   }
+  }
+  p {
+   font-size: 14px;
+   line-height: 17px;
+   letter-spacing: 0.03em;
+   color: #018DBD;
+  }
+ }
+
+ &.contacts-offices-tab--active {
+  &:before {
+   opacity: 1;
+  }
+
+  .contacts-offices-tab__name {
+   color: #FFA200;
+  }
+  .contacts-offices-tab__icon svg {
+
+   path, rect {
+    fill: #FFA200;
+   }
+  }
+ }
+}
+
+.contacts-offices-content-tabs {
+ margin-top: 7px;
+}
+
+.contacts-offices-content-tab {
+ display: none;
+ border: 1px solid #BDBDBD;
+
+ &.contacts-offices-content-tab--active {
+  display: block;
+ }
+
+ .contacts-offices-content-tab__map {
+  height: 535px;
+  background: url(../img/contacts/map.jpg) no-repeat center / cover;
+ }
+}
+
+
+.contacts-outro-section {
+ margin: 22px 0;
+}

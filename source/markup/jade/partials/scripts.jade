@@ -152,7 +152,7 @@ script.
 
   function changeTabs(tabClass, contentClass) {
     $('.' + tabClass).click(function () {
-      if (!$(this).hasClass(tabClass + '--active')) {
+      if (!$(this).hasClass(tabClass + '--active') && !$(this).hasClass(tabClass + '--disabled')) {
         $('.' + tabClass + '--active').removeClass(tabClass + '--active');
         $(this).addClass(tabClass + '--active');
         $('.' + contentClass + '--active').removeClass(contentClass + '--active');

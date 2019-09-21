@@ -1,0 +1,125 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#contacts
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        p.breadcrumbs__item Контакты
+
+    section.section.contacts-intro-section
+      .main-wrapper.main-wrapper--p
+        h1.title-big Контакты
+        .info-blocks
+          .info-block
+            h2.subtitle Наши телефоны
+            .info-block__divider
+            .info-block-phones
+              a(href="tel:+38(057) 751 75 07").info-block-phone.subtitle +38(057) 751 75 07
+              a(href="tel:+38(099) 601 77 77").info-block-phone.subtitle +38(099) 601 77 77
+              a(href="tel:+38(097) 367 50 50").info-block-phone.subtitle +38(097) 367 50 50
+          .info-block.info-block--bg
+            h2.subtitle Время работы офиса
+            .info-block__divider
+            img(src="img/common/clock-icon-orange-2.svg")
+            h3.text Ежедневно
+            h2.subtitle с 9.00 до 20.00
+          .info-block
+            h2.subtitle Прием заказов
+            .info-block__divider
+            img(src="img/common/mail-icon.svg")
+            h2.subtitle Svitanok@gmail.com
+
+
+    section.section.contacts-offices-section
+      .main-wrapper.main-wrapper--p
+        h2.title.contacts-offices-title Наши офисы
+        .contacts-offices-tabs
+          .contacts-offices-tab.contacts-offices-tab--active(data-item="1")
+            .contacts-offices-tab__icon
+              svg(width='13', height='16', viewBox='0 0 13 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                path(d='M6.26825 0.00407228C3.03099 0.115611 0.341634 2.5957 0.030938 5.76142C-0.0325376 6.39457 0.00421149 7.00803 0.117799 7.59525C0.117799 7.59525 0.127822 7.66414 0.16123 7.79536C0.261455 8.23495 0.411791 8.66142 0.598877 9.06165C1.25034 10.5773 2.75705 13.1131 6.13796 15.8721C6.34509 16.0426 6.6491 16.0426 6.85957 15.8721C10.2405 13.1164 11.7472 10.5805 12.402 9.05837C12.5924 8.65814 12.7394 8.23495 12.8396 7.79208C12.8697 7.66414 12.8831 7.59197 12.8831 7.59197C12.9599 7.1983 13 6.7948 13 6.38145C13 2.77941 9.9632 -0.123869 6.26825 0.00407228ZM6.49877 9.55701C4.75486 9.55701 3.34169 8.16934 3.34169 6.4569C3.34169 4.74446 4.75486 3.35679 6.49877 3.35679C8.24267 3.35679 9.65584 4.74446 9.65584 6.4569C9.65584 8.16934 8.24267 9.55701 6.49877 9.55701Z', fill='#4F4F4F')
+            p.contacts-offices-tab__name На карте
+          .contacts-offices-tab(data-item="2")
+            .contacts-offices-tab__icon
+              svg(width='13', height='13', viewBox='0 0 13 13', fill='none', xmlns='http://www.w3.org/2000/svg')
+                rect(width='6', height='6', rx='1', fill='#4F4F4F')
+                rect(y='7', width='6', height='6', rx='1', fill='#4F4F4F')
+                rect(x='7', width='6', height='6', rx='1', fill='#4F4F4F')
+                rect(x='7', y='7', width='6', height='6', rx='1', fill='#4F4F4F')
+            p.contacts-offices-tab__name Картинками
+          .contacts-offices-tab(data-item="3")
+            .contacts-offices-tab__icon
+              svg(width='15', height='15', viewBox='0 0 15 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                g(clip-path='url(#clip0)')
+                  path(d='M14.252 12.9471H4.22161C3.80821 12.9471 3.47314 12.6121 3.47314 12.1987C3.47314 11.7853 3.80821 11.4502 4.22161 11.4502H14.2518C14.6652 11.4502 15.0003 11.7853 15.0003 12.1987C15.0003 12.6121 14.6655 12.9471 14.252 12.9471Z', fill='#4F4F4F')
+                  path(d='M14.252 8.24815H4.22161C3.80821 8.24815 3.47314 7.91309 3.47314 7.49969C3.47314 7.08628 3.80821 6.75122 4.22161 6.75122H14.2518C14.6652 6.75122 15.0003 7.08628 15.0003 7.49969C15.0005 7.91309 14.6655 8.24815 14.252 8.24815Z', fill='#4F4F4F')
+                  path(d='M14.252 3.55089H4.22161C3.80821 3.55089 3.47314 3.21582 3.47314 2.80242C3.47314 2.38902 3.80821 2.05396 4.22161 2.05396H14.2518C14.6652 2.05396 15.0003 2.38902 15.0003 2.80242C15.0003 3.21582 14.6655 3.55089 14.252 3.55089Z', fill='#4F4F4F')
+                  path(d='M1.00519 3.86536C1.56034 3.86536 2.01038 3.41532 2.01038 2.86017C2.01038 2.30502 1.56034 1.85498 1.00519 1.85498C0.450039 1.85498 0 2.30502 0 2.86017C0 3.41532 0.450039 3.86536 1.00519 3.86536Z', fill='#4F4F4F')
+                  path(d='M1.00519 8.50525C1.56034 8.50525 2.01038 8.05521 2.01038 7.50006C2.01038 6.94491 1.56034 6.49487 1.00519 6.49487C0.450039 6.49487 0 6.94491 0 7.50006C0 8.05521 0.450039 8.50525 1.00519 8.50525Z', fill='#4F4F4F')
+                  path(d='M1.00519 13.1464C1.56034 13.1464 2.01038 12.6963 2.01038 12.1412C2.01038 11.586 1.56034 11.136 1.00519 11.136C0.450039 11.136 0 11.586 0 12.1412C0 12.6963 0.450039 13.1464 1.00519 13.1464Z', fill='#4F4F4F')
+                defs
+                  clippath#clip0
+                    rect(width='15', height='15', fill='white')
+            p.contacts-offices-tab__name Списком
+          .contacts-offices-tab.contacts-offices-tab--disabled
+            .contacts-offices-tab-list
+              .contacts-offices-tab-item
+                i
+                  svg(width='13', height='16', viewBox='0 0 13 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path(d='M6.26825 0.00407228C3.03099 0.115611 0.341634 2.5957 0.030938 5.76142C-0.0325376 6.39457 0.00421149 7.00803 0.117799 7.59525C0.117799 7.59525 0.127822 7.66414 0.16123 7.79536C0.261455 8.23495 0.411791 8.66142 0.598877 9.06165C1.25034 10.5773 2.75705 13.1131 6.13796 15.8721C6.34509 16.0426 6.6491 16.0426 6.85957 15.8721C10.2405 13.1164 11.7472 10.5805 12.402 9.05837C12.5924 8.65814 12.7394 8.23495 12.8396 7.79208C12.8697 7.66414 12.8831 7.59197 12.8831 7.59197C12.9599 7.1983 13 6.7948 13 6.38145C13 2.77941 9.9632 -0.123869 6.26825 0.00407228ZM6.49877 9.55701C4.75486 9.55701 3.34169 8.16934 3.34169 6.4569C3.34169 4.74446 4.75486 3.35679 6.49877 3.35679C8.24267 3.35679 9.65584 4.74446 9.65584 6.4569C9.65584 8.16934 8.24267 9.55701 6.49877 9.55701Z', fill='#4F4F4F')
+                p Офисы с образцами
+              .contacts-offices-tab-item
+                i
+                  svg(width='13', height='16', viewBox='0 0 13 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path(d='M6.26825 0.00407228C3.03099 0.115611 0.341634 2.5957 0.030938 5.76142C-0.0325376 6.39457 0.00421149 7.00803 0.117799 7.59525C0.117799 7.59525 0.127822 7.66414 0.16123 7.79536C0.261455 8.23495 0.411791 8.66142 0.598877 9.06165C1.25034 10.5773 2.75705 13.1131 6.13796 15.8721C6.34509 16.0426 6.6491 16.0426 6.85957 15.8721C10.2405 13.1164 11.7472 10.5805 12.402 9.05837C12.5924 8.65814 12.7394 8.23495 12.8396 7.79208C12.8697 7.66414 12.8831 7.59197 12.8831 7.59197C12.9599 7.1983 13 6.7948 13 6.38145C13 2.77941 9.9632 -0.123869 6.26825 0.00407228ZM6.49877 9.55701C4.75486 9.55701 3.34169 8.16934 3.34169 6.4569C3.34169 4.74446 4.75486 3.35679 6.49877 3.35679C8.24267 3.35679 9.65584 4.74446 9.65584 6.4569C9.65584 8.16934 8.24267 9.55701 6.49877 9.55701Z', fill='#4F4F4F')
+                p Шоу-румы
+
+        .contacts-offices-content-tabs
+          .contacts-offices-content-tab.contacts-offices-content-tab--active(data-item="1")
+            .contacts-offices-content-tab__map
+          .contacts-offices-content-tab(data-item="2")
+            .contacts-offices-content-tab__map
+          .contacts-offices-content-tab(data-item="3")
+            .contacts-offices-content-tab__map
+
+
+    section.section.contacts-outro-section
+      .main-wrapper.main-wrapper--p
+        .info-blocks
+          .info-block
+            h2.subtitle Жалобы
+            h3.text-2.text-2--grey 1 получена. На 1 ответили
+            .info-block__divider
+            img(src="img/common/mail-icon.svg")
+            h2.subtitle Claims@svitanok.kh.ua
+          .info-block
+            h2.subtitle Вопросы и консультации
+            h3.text-2.text-2--grey 243 получено. На 241 уже ответили
+            .info-block__divider
+            img(src="img/common/mail-icon.svg")
+            h2.subtitle Support@svitanok.kh.ua
+          .info-block
+            h2.subtitle Сотрудничество и партнёрство
+            h3.text-2.text-2--grey 23 получено. На 23 уже ответили
+            .info-block__divider
+            img(src="img/common/mail-icon.svg")
+            h2.subtitle Partnership@svitanok.kh.ua
+
+
+
+
+    include ../partials/more
+    include ../partials/certificates
+
+
+  include ../partials/footer
+
+
+  script.
+    $(function(){
+      // contacts-offices change tabs
+      changeTabs('contacts-offices-tab', 'contacts-offices-content-tab');
+    });
