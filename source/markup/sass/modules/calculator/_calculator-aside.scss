@@ -1,0 +1,128 @@
+.calculator-aside {
+ width: 340px;
+ margin-left: 18px;
+}
+
+.calculator-aside-block {
+ background: #FBF5F3;
+ border: 1px solid #EEEEEE;
+ border-radius: 5px;
+ padding: 15px;
+ margin-bottom: 25px;
+ &:last-child {
+  margin-bottom: 0;
+ }
+}
+
+.calculator-aside-preview {
+ height: 450px;
+ display: flex;
+ flex-direction: column;
+
+ .subtitle {
+  text-align: center;
+ }
+
+ .calculator-aside-preview__list {
+  flex: 1;
+  margin-top: 20px;
+  overflow-y: auto;
+ }
+
+ .calculator-aside-preview__item {
+  display: flex;
+  align-items: center;
+  background: url(../img/common/settings-icon.svg) no-repeat center right 14px, #FFFFFF;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  padding: 20px 35px 20px 20px;
+  margin-bottom: 5px;
+  &:last-child {
+   margin-bottom: 0;
+  }
+
+  .calculator-aside-preview__item-thumb {
+   width: 28px;
+   height: 28px;
+   border: 1px solid #C4C4C4;
+   border-radius: 5px;
+   background: no-repeat center / cover;
+   margin-right: 12px;
+  }
+
+  .calculator-aside-preview__item-text {
+   flex: 1;
+   font-size: 12px;
+   font-weight: 300;
+   line-height: 140%;
+   letter-spacing: 0.02em;
+  }
+
+  &.calculator-aside-preview__item--empty {
+   background: #fff;
+   padding: 20px;
+
+   .calculator-aside-preview__item-text {
+    text-align: center;
+   }
+  }
+ }
+
+ .calculator-aside-preview__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #BDBDBD;
+  padding-top: 12px;
+  margin-top: 12px;
+
+  h3 {
+   font-size: 14px;
+   line-height: 19px;
+  }
+  h2 {
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 140%;
+   letter-spacing: 0.01em;
+
+   span {
+    font-weight: 400;
+    font-size: 16px;
+   }
+  }
+ }
+}
+
+.calculator-aside-block.calculator-aside-callback {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 12px 5px;
+
+ .subtitle {
+  font-weight: 700;
+  text-align: center;
+ }
+
+ .calculator-aside-callback__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px auto 0;
+ }
+
+ .main-header-top-info__phone, .main-header-top-info__time {
+  padding: 11px 0;
+ }
+
+ .main-header-top-info__time {
+  border-left: 1px solid #E0E0E0;
+  padding-left: 14px;
+  margin: 0 0 0 14px;
+ }
+
+ .btn {
+  margin: 12px auto 0;
+ }
+}

@@ -135,6 +135,54 @@
   top: 0;
   transition: 0.5s;
  }
+
+ &.custom-checkbox--radio {
+
+  input[type="checkbox"] {
+   &:checked {
+
+    + label {
+
+     .custom-checkbox__box {
+      background: #fff;
+      &:before {
+       opacity: 1;
+      }
+     }
+    }
+   }
+  }
+
+  label {
+   min-height: 22px;
+   font-size: 15px;
+   line-height: 140%;
+   letter-spacing: 0.02em;
+   color: #000000;
+   padding-left: 40px;
+  }
+
+  .custom-checkbox__box {
+   width: 22px;
+   height: 22px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 50%;
+   background: #fff;
+   border: 1px solid #FFA200;
+   &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFA200;
+    position: absolute;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    transition: 0.5s;
+    opacity: 0;
+   }
+  }
+ }
 }
 
 .quantity {

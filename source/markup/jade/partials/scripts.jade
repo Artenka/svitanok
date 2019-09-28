@@ -45,6 +45,9 @@ script.
       preferredCountries: ['ua', 'ru', 'by', 'kz']
     });
 
+    // basic tabs change
+    changeTabs('tab', 'content-tab');
+
     // products slider
     $('.home-products-slider--md').slick({
       adaptiveHeight: true,
@@ -134,6 +137,33 @@ script.
       arrows: true,
       dots: false
     });
+
+    // calculator choose tab
+    changeTabs('calculator-choose-tab', 'calculator-choose-content-tab');
+
+    // calculator item slider
+    $('.calculator-choose-item-slider').slick({
+      adaptiveHeight: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerPadding: '0px',
+      arrows: true,
+      dots: false,
+      asNavFor: '.calculator-choose-item-nav-slider'
+    });
+    // calculator item slider
+    $('.calculator-choose-item-nav-slider').slick({
+      adaptiveHeight: true,
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      centerPadding: '0px',
+      arrows: false,
+      dots: false,
+      asNavFor: '.calculator-choose-item-slider',
+      focusOnSelect: true
+    });
   });
 
 
@@ -157,6 +187,7 @@ script.
         $(this).addClass(tabClass + '--active');
         $('.' + contentClass + '--active').removeClass(contentClass + '--active');
         $('.' + contentClass + '[data-item=' + $(this).data("item") + ']').addClass(contentClass + '--active');
+        $('.slick-slider').slick('reinit');
       }
     })
   }

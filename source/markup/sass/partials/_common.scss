@@ -141,3 +141,57 @@
   right: 0;
  }
 }
+
+.tabs {
+ display: flex;
+ background: #FFFFFF;
+ border: 1px solid #BDBDBD;
+ padding: 12px 0;
+}
+.tab {
+ flex: 1;
+ min-height: 53px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-right: 1px solid #BDBDBD;
+ font-size: 14px;
+ line-height: 17px;
+ text-align: center;
+ letter-spacing: 0.03em;
+ color: #4F4F4F;
+ cursor: pointer;
+ position: relative;
+ &:before {
+  content: '';
+  width: 70px;
+  height: 5px;
+  background: #FFA200;
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 35px);
+  opacity: 0;
+ }
+ &:last-child {
+  border-right: 0;
+ }
+
+ &.tab--active {
+  color: #FFA200;
+  &:before {
+   opacity: 1;
+  }
+ }
+}
+
+.content-tabs {
+
+}
+
+.content-tab {
+ display: none;
+
+ &.content-tab--active {
+  display: block;
+ }
+}

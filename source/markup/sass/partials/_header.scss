@@ -56,32 +56,6 @@
   padding-top: 10px;
  }
 
- .main-header-top-info__phone, .main-header-top-info__time {
-  display: flex;
-  align-items: center;
-  margin-top: 7px;
-  &:first-child {
-   margin-top: 0;
-  }
-
-  i {
-   width: 12px;
-   height: 19px;
-   background: no-repeat center / contain;
-   margin-right: 8px;
-  }
-  p, a {
-   font-size: 12px;
-  }
- }
-
- .main-header-top-info__phone i {
-  background-image: url(../img/common/phone-icon.svg);
- }
- .main-header-top-info__time i {
-  background-image: url(../img/common/clock-icon.svg);
- }
-
  .main-header-top-info__callback {
   margin-top: 8px;
  }
@@ -92,6 +66,32 @@
   right: calc(50% - 630px);
   z-index: 50;
  }
+}
+
+.main-header-top-info__phone, .main-header-top-info__time {
+ display: flex;
+ align-items: center;
+ margin-top: 7px;
+ &:first-child {
+  margin-top: 0;
+ }
+
+ i {
+  width: 12px;
+  height: 19px;
+  background: no-repeat center / contain;
+  margin-right: 8px;
+ }
+ p, a {
+  font-size: 12px;
+ }
+}
+
+.main-header-top-info__phone i {
+ background-image: url(../img/common/phone-icon.svg);
+}
+.main-header-top-info__time i {
+ background-image: url(../img/common/clock-icon.svg);
 }
 
 .header-cart-info {

@@ -38,6 +38,14 @@
   border-color: #fff;
   color: #018DBD;
  }
+
+ &.btn--disabled {
+  opacity: 0.25;
+  cursor: default;
+  &:hover {
+   transform: scale(1);
+  }
+ }
 }
 
 .btn-transparent {
@@ -187,4 +195,14 @@
  &.video-btn--2 {
   margin: 0;
  }
+}
+
+.prev-btn {
+ background: url(../img/common/prev-icon.svg) no-repeat center left;
+ font-size: 15px;
+ line-height: 140%;
+ letter-spacing: 0.02em;
+ color: #BDBDBD;
+ padding-left: 44px;
+ cursor: pointer;
 }

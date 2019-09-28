@@ -29,6 +29,18 @@
  display: flex;
  flex-wrap: wrap;
  margin-top: 50px;
+
+ &.pleated-fabric-catalog--md {
+
+  .pleated-fabric-catalog-item {
+   width: 140px;
+   height: 140px;
+   margin: 0 25px 25px 0;
+   &:nth-child(5n+5) {
+    margin-right: 0;
+   }
+  }
+ }
 }
 
 .pleated-fabric-catalog-item {
