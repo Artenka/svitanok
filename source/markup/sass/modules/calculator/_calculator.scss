@@ -363,7 +363,8 @@
  .calculator-step-about-1-item__content {
   @extend .custom-scroll;
   height: 214px;
-  margin: 20px 0 0;
+  padding: 16px;
+  //margin: 20px 0 0;
   overflow-y: auto;
 
   .ul {
