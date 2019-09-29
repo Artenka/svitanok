@@ -3,76 +3,95 @@ extends ../layouts/main
 block contents
   include ../partials/header
 
-  .main#calculator-marquises
+  .main#calculator-reflexes
     .breadcrumbs
       .main-wrapper
         a(href="#").breadcrumbs__item Главная
-        p.breadcrumbs__item Калькулятор маркиз
+        p.breadcrumbs__item Калькулятор рефлексол
 
     .main-wrapper
       .calculator-layout
         section.calculator-section
           .calculator.calculator--green
             .calculator-block.calculator-choose
-              h2.calculator-choose__title Выберите какие маркизы вам нужны
+              h2.calculator-choose__title Выберите какие рефлексолы вам нужны
               .calculator-choose-tabs
-                .calculator-choose-tab.calculator-choose-tab--active(data-item="1") Все виды маркиз
-                .calculator-choose-tab(data-item="2") Горизонтальная маркиза
-                .calculator-choose-tab(data-item="3") Вертикальаня маркиза
-                .calculator-choose-tab.calculator-choose-tab--more.calculator-choose-tab--disabled еще
+                .calculator-choose-tab.calculator-choose-tab--active(data-item="1") Все виды рефлексол
+                .calculator-choose-tab(data-item="2") Открытые рефлексолы
+                .calculator-choose-tab(data-item="3") Рефлексолы Zip<br> с направляющими
               .calculator-choose-content-tabs
                 .calculator-choose-content-tab.calculator-choose-content-tab--active(data-item="1")
-                  .calculator-choose-list
-                    .calculator-choose-list__item.calculator-choose-list__item--lg(style="background-image: url(img/calculator-marquises/calculator-choose-list-item-1.jpg)")
-                      h2.calculator-choose-list__item-title Маркиза горизонтальная
-                    .calculator-choose-list__item.calculator-choose-list__item--lg(style="background-image: url(img/calculator-marquises/calculator-choose-list-item-2.jpg)")
-                      h2.calculator-choose-list__item-title Маркиза вертикальная
-                    .calculator-choose-list__item.calculator-choose-list__item--lg(style="background-image: url(img/calculator-marquises/calculator-choose-list-item-3.jpg)")
-                      h2.calculator-choose-list__item-title Маркиза ковшовая
-                    .calculator-choose-list__item.calculator-choose-list__item--lg(style="background-image: url(img/calculator-marquises/calculator-choose-list-item-4.jpg)")
-                      h2.calculator-choose-list__item-title Маркиза с падающим локтём
+                  .calculator-choose-item
+                    .calculator-step-about-1
+                      .calculator-step-about-1-item
+                        .calculator-about-thumb(style="background-image: url(img/calculator-reflexes/location-1.jpg)")
+                          h2.calculator-about-thumb__title Открытые рефлексолы
+                        .calculator-step-about-1-item__content
+                          h2.subtitle-2 Открытые рефлексолы
+                          ul.ul.ul--sm.ul--checkbox.ul--green.ul--green
+                            li Конструкция полностью закрывает окно, но стена и подоконник остаются свободными.
+                            li Будет плотно перекрывать свет, максимально защищает от яркого солнца и бликов
+                            li Делает конструкцию более легковестной
+                      .calculator-step-about-1-item
+                        .calculator-about-thumb(style="background-image: url(img/calculator-reflexes/location-2.jpg)")
+                          h2.calculator-about-thumb__title Рефлексолы Zip с направляющими
+                        .calculator-step-about-1-item__content
+                          h2.subtitle-2 Рефлексолы Zip с направляющими
+                            ul.ul.ul--sm.ul--checkbox.ul--green.ul--green
+                              li Конструкция полностью закрывает окно, но стена и подоконник остаются свободными.
+                              li Будет плотно перекрывать свет, максимально защищает от яркого солнца и бликов
+                              li Делает конструкцию более легковестной
 
                 .calculator-choose-content-tab(data-item="2")
                   .calculator-choose-item
                     .calculator-choose-item__main
                       .calculator-choose-item-slider.slick--arrows-1.slick--arrows-1-2.slick--green
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                             .video-btn
                               i
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                       .calculator-choose-item-nav-slider
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                     .calculator-choose-item__about
-                      h2.subtitle-2.calculator-choose-item__about-title Маркиза горизонтальная
+                      h2.subtitle-2.calculator-choose-item__about-title Открытые рефлексолы
+                      p.text-2 Открытый валик, без короба для намотки полотна и тросовой фиксации ткани.
                       ul.ul.ul--sm.ul--checkbox.ul--green.calculator-choose-item__about-list
-                        li Серьезная защита от солнца и дождя. Особенно для больших площадей
-                        li Эстетически привлекательны. Можно использовать как рекламную площадку
-                        li Уникальные ткани, созданные специально для наружного применения
-                        li Доступная цена и долговечность
-                        li Возможно нанести любой рисунок на ткань
-                        li Не нужны дополнительные опоры
-                        li Большое количество возможных функциональных дополнений
+                        li Дешевле в среднем на 500 грн.
+                        li Хорошо подходит для защиты проемов больших размеров.
+                      ul.ul.ul--sm.ul--checkbox.ul--green.calculator-choose-item__about-list
+                        li.ul-point.ul-point--minus.ul-point--green
+                          .ul-point__icon
+                          p.ul-point__text Есть просветы по бокам — конструкция не герметична
+                        li.ul-point.ul-point--minus.ul-point--green
+                          .ul-point__icon
+                          p.ul-point__text От насекомых придётся дополнительно ставить москитную сетку
+                        li.ul-point.ul-point--minus.ul-point--green
+                          .ul-point__icon
+                          p.ul-point__text Ткань хуже защищена от воздействий внешней среды
+                        li.ul-point.ul-point--minus.ul-point--green
+                          .ul-point__icon
+                          p.ul-point__text Эстетически менее привлекальны
                   .calculator-next-btn
                     button(type="button").btn выбрать
 
@@ -81,32 +100,32 @@ block contents
                     .calculator-choose-item__main
                       .calculator-choose-item-slider.slick--arrows-1.slick--arrows-1-2.slick--green
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                             .video-btn
                               i
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                         .calculator-choose-item-slide
-                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-item-1.jpg)")
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-item-1.jpg)")
                       .calculator-choose-item-nav-slider
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                         .calculator-choose-item-nav-slide
-                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-marquises/calculator-choose-nav-item-1.jpg)")
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-reflexes/calculator-choose-nav-item-1.jpg)")
                     .calculator-choose-item__about
                       h2.subtitle-2.calculator-choose-item__about-title Маркиза горизонтальная
                       ul.ul.ul--sm.ul--checkbox.ul--green.calculator-choose-item__about-list
@@ -126,48 +145,8 @@ block contents
                 button(type="button").calculator-step-header__prev.prev-btn Назад
                 .calculator-step-header__counter
                   .calculator-step-header__counter-current шаг 2
-                  .calculator-step-header__counter-total из 5
-                h2.subtitle-2.calculator-step-header__title Выберите тип горизонтальных маркиз
-              .calculator-step-main
-                .calculator-step-about-1
-                  .calculator-step-about-1-item
-                    .calculator-about-thumb(style="background-image: url(img/calculator-marquises/location-1.jpg)")
-                      h2.calculator-about-thumb__title Открытые
-                    .calculator-step-about-1-item__content
-                      p.text-2
-                        | Однотонные жалюзи подойдут к любому стилю из-за своей нейтральности.
-                        br
-                        br
-                        | Шторы отлично работают на контрасте, поэтому будут идеальны в том случае, если у Вас обои с рисунком.
-                        br
-                        br
-                        | При выборе цвета ориентируйтесь на цвет стен в помещении — выигрышно выбирать на несколько оттенков светлее или темнее.
-                        br
-                        br
-                        | Но не забывайте, что светлые оттенки визуально расширяют пространство.
-                  .calculator-step-about-1-item
-                    .calculator-about-thumb(style="background-image: url(img/calculator-marquises/location-2.jpg)")
-                      h2.calculator-about-thumb__title Кассетные
-                    .calculator-step-about-1-item__content
-                      p.text-2
-                        | Если Вам однотонный цвет кажется скучным, а рисунки считаете перебором, то обратите внимание на ткани с лёгкой текстурой.
-                        br
-                        br
-                        | Если Ваше помещение маленькое — не распыляйтесь на множество цветов и фактур. Достаточно выбрать один основной цвет, причем такой, чтобы все материалы гармонировали с ним.
-                        br
-                        br
-                        | Хорошо, когда мебель и шторы находятся в одном цветовом спектре — кремоый и коричневый, песочный и
-              .calculator-next-btn
-                button(type="button").btn.btn--disabled выбрать
-
-
-            .calculator-block.calculator-step
-              .calculator-step-header
-                button(type="button").calculator-step-header__prev.prev-btn Назад
-                .calculator-step-header__counter
-                  .calculator-step-header__counter-current шаг 3
-                  .calculator-step-header__counter-total из 5
-                h2.subtitle-2.calculator-step-header__title Выберите тип ткани маркиз
+                  .calculator-step-header__counter-total из 4
+                h2.subtitle-2.calculator-step-header__title Выберите тип ткани рефлексол
               .calculator-step-main
                 .calculator-step-texture
                   .calculator-step-texture-item
@@ -213,9 +192,9 @@ block contents
               .calculator-step-header
                 button(type="button").calculator-step-header__prev.prev-btn Назад
                 .calculator-step-header__counter
-                  .calculator-step-header__counter-current шаг 4
-                  .calculator-step-header__counter-total из 5
-                h2.subtitle-2.calculator-step-header__title Выберите цвет ткани маркиз
+                  .calculator-step-header__counter-current шаг 3
+                  .calculator-step-header__counter-total из 4
+                h2.subtitle-2.calculator-step-header__titleВыберите цвет ткани рефлексол
               .calculator-step-main
                 .calculator-step-color-picker
                   h2.calculator-step-color-picker__title Все цвета:
@@ -299,8 +278,8 @@ block contents
               .calculator-step-header
                 button(type="button").calculator-step-header__prev.prev-btn Назад
                 .calculator-step-header__counter
-                  .calculator-step-header__counter-current шаг 5
-                  .calculator-step-header__counter-total из 5
+                  .calculator-step-header__counter-current шаг 4
+                  .calculator-step-header__counter-total из 4
                 h2.subtitle-2.calculator-step-header__title Введите размер изделия
               .calculator-step-main
                 .calculator-step-final

@@ -316,6 +316,13 @@ b, strong {
     padding-left: 0;
    }
   }
+
+  &.ul--green {
+
+   li:before {
+    background-image: url(../img/common/check-icon-green.svg);
+   }
+  }
  }
 }
 
