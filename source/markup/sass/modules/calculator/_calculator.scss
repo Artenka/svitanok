@@ -33,6 +33,14 @@
    }
   }
 
+  .calculator-step-about-1-item.calculator-step-about-1-item--active {
+   border-color: #3CB54B;
+
+   .calculator-about-thumb__title:before {
+    background: #3CB54B;
+   }
+  }
+
   .calculator-step-about-2-item {
 
    .calculator-step-about-2-item__point {
@@ -69,6 +77,76 @@
 
   .calculator-step-about-1-item .calculator-step-about-1-item__content, .calculator-step-texture-item .calculator-step-texture-item__content {
    @extend .custom-scroll-green;
+  }
+ }
+
+ &.calculator--violet {
+
+  .calculator-choose-tab {
+   &:before {
+    background: #A62868;
+   }
+
+   &.calculator-choose-tab--active {
+    color: #A62868;
+   }
+  }
+
+  .calculator-step-header {
+
+   .calculator-step-header__counter {
+    border-color: #A62868;
+   }
+
+   .calculator-step-header__counter-current {
+    background: #A62868;
+   }
+  }
+
+  .calculator-step-about-1-item.calculator-step-about-1-item--active {
+   border-color: #A62868;
+
+   .calculator-about-thumb__title:before {
+    background: #A62868;
+   }
+  }
+
+  .calculator-step-about-2-item {
+
+   .calculator-step-about-2-item__point {
+
+    &.calculator-step-about-2-item__point--plus {
+
+     .calculator-step-about-2-item__point-icon {
+      background: #A62868;
+     }
+    }
+
+    &.calculator-step-about-2-item__point--minus {
+
+     .calculator-step-about-2-item__point-icon {
+      border-color: #A62868;
+      &:before {
+       background: #A62868;
+      }
+     }
+    }
+   }
+  }
+
+  .calculator-step-final-options-item:before {
+   background: #A62868;
+  }
+  .calculator-step-success .calculator-step-success__price .calculator-step-success__price-current {
+   color: #A62868;
+  }
+  .calculator-step-success .calculator-step-success__price .calculator-step-success__price-discount {
+   border-color: #A62868;
+   color: #A62868;
+  }
+
+  .calculator-step-about-1-item .calculator-step-about-1-item__content, .calculator-step-texture-item .calculator-step-texture-item__content {
+   @extend .custom-scroll-violet;
   }
  }
 }
@@ -356,6 +434,17 @@
  flex: 1;
  display: flex;
  justify-content: space-between;
+
+ &.calculator-step-about-1--doors {
+
+  .calculator-about-thumb {
+   height: 200px;
+
+   .calculator-about-thumb__title {
+    background: transparent;
+   }
+  }
+ }
 }
 .calculator-step-about-1-item {
  width: 400px;
@@ -367,8 +456,28 @@
   //margin: 20px 0 0;
   overflow-y: auto;
 
-  .ul {
+  h2, p, ul {
    margin-top: 20px;
+   &:first-child {
+    margin-top: 0;
+   }
+  }
+ }
+
+ &.calculator-step-about-1-item--active {
+  border: 1px solid #FFA200;
+
+  .calculator-about-thumb__title {
+   position: relative;
+   &:before {
+    content: '';
+    width: 82px;
+    height: 5px;
+    background: #FFA200;
+    position: absolute;
+    bottom: -2px;
+    left: calc(50% - 41px);
+   }
   }
  }
 }

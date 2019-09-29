@@ -60,6 +60,19 @@
    }
   }
  }
+
+ &.pleated-fabric-catalog--green .pleated-fabric-catalog-item.pleated-fabric-catalog-item--active {
+  border-color: #3CB54B;
+  &:before {
+   background: #3CB54B;
+  }
+ }
+ &.pleated-fabric-catalog--violet .pleated-fabric-catalog-item.pleated-fabric-catalog-item--active {
+  border-color: #A62868;
+  &:before {
+   background: #A62868;
+  }
+ }
 }
 
 .pleated-fabric-catalog-item {
@@ -156,5 +169,19 @@
   opacity: 0;
   transition: 0.5s;
   z-index: 3;
+ }
+
+ &.pleated-fabric-catalog-item--active {
+  border-color: #FFA200;
+  &:before {
+   content: '';
+   width: 40px;
+   height: 8px;
+   background: #FFA200;
+   position: absolute;
+   bottom: -3px;
+   left: calc(50% - 20px);
+   z-index: 2;
+  }
  }
 }

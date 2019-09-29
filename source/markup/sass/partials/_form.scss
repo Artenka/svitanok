@@ -192,6 +192,15 @@
     }
    }
   }
+  &.custom-checkbox--violet {
+
+   .custom-checkbox__box {
+    border-color: #A62868;
+    &:before {
+     background: #A62868;
+    }
+   }
+  }
  }
 }
 

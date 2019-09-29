@@ -280,6 +280,25 @@
    }
   }
  }
+
+ &.ul-point--violet {
+
+  &.ul-point--plus {
+
+   .ul-point__icon {
+    background: #A62868;
+   }
+  }
+  &.ul-point--minus {
+
+   .ul-point__icon {
+    border-color: #A62868;
+    &:before {
+     background: #A62868;
+    }
+   }
+  }
+ }
 }
 
 .info-icon {
@@ -299,6 +318,9 @@
 
  &.info-icon--green {
   background-image: url(../img/common/info-icon-green.svg);
+ }
+ &.info-icon--violet {
+  background-image: url(../img/common/info-icon-violet.svg);
  }
 }
 
