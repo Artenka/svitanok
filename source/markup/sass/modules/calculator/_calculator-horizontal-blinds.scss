@@ -1,0 +1,86 @@
+.calculator-lamels-width {
+ display: flex;
+ background: #FFFFFF;
+ border: 1px solid #BDBDBD;
+ padding: 16px 35px 35px 25px;
+
+ .calculator-lamels-width__left {
+  width: 445px;
+  margin-right: 45px;
+
+  .subtitle-2 {
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 14px;
+  }
+ }
+
+ .calculator-lamels-width__right {
+  flex: 1;
+  padding-top: 32px;
+ }
+}
+
+.calculator-lamels-width-list {
+ display: flex;
+}
+
+.calculator-lamels-width-item {
+ width: 210px;
+ height: 160px;
+ background: no-repeat center / cover;
+ margin-right: 25px;
+ position: relative;
+ &:last-child {
+  margin-right: 0;
+ }
+
+ .calculator-lamels-width-item__number {
+  width: 104px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #FFA200;
+  border-radius: 25px;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 52px);
+ }
+
+ &.calculator-lamels-width-item--active {
+
+  .calculator-lamels-width-item__number {
+   background: #FFA200;
+   color: #fff;
+  }
+ }
+}
+
+.calculator-lamels-design {
+ background: #FFFFFF;
+ border: 1px solid #BDBDBD;
+ padding: 20px 15px 25px;
+ margin-top: 20px;
+
+ .subtitle-2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+ }
+}
+
+.calculator-lamels-design-list {
+ display: flex;
+}
+
+.calculator-lamels-design-item {
+ width: 140px;
+ height: 140px;
+ background: no-repeat center / cover;
+ margin-right: 20px;
+ &:nth-child(5n+5) {
+  margin-right: 0;
+ }
+}

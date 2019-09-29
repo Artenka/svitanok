@@ -11,6 +11,21 @@
  justify-content: center;
  margin-top: 42px;
 
+ .pleated-fabric-catalog-nav__item-layout {
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+  position: relative;
+
+  .pleated-fabric-catalog-nav__item {
+   margin: 0;
+  }
+
+  .info-icon {
+   margin-left: 10px;
+  }
+ }
+
  .pleated-fabric-catalog-nav__item {
   width: 224px;
   border: none;
@@ -22,6 +37,10 @@
   color: #676767;
   padding: 23px 40px 23px 30px;
   margin: 0 25px;
+ }
+
+ &.pleated-fabric-catalog-nav--center {
+  justify-content: center;
  }
 }
 

@@ -1,0 +1,467 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#services
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        p.breadcrumbs__item Калькулятор горизонтальных жалюзи
+
+    .main-wrapper
+      .calculator-layout
+        section.calculator-section
+          .calculator
+            .calculator-block.calculator-choose
+              h2.calculator-choose__title Выберите какие горизонтальные жалюзи вам нужны
+              .calculator-choose-tabs
+                .calculator-choose-tab.calculator-choose-tab--active(data-item="1") Все виды жалюзи
+                .calculator-choose-tab(data-item="2") Алюминиевые жалюзи
+                .calculator-choose-tab(data-item="3") Жалюзи Изолайт
+                .calculator-choose-tab(data-item="4") Деревянные жалюзи
+              .calculator-choose-content-tabs
+                .calculator-choose-content-tab.calculator-choose-content-tab--active(data-item="1")
+                  .calculator-choose-list
+                    .calculator-choose-list__item.calculator-choose-list__item--lg(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-list-item-1.jpg)")
+                      h2.calculator-choose-list__item-title Жалюзи изолайт
+                    .calculator-choose-list__item.calculator-choose-list__item--lg(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-list-item-2.jpg)")
+                      h2.calculator-choose-list__item-title Деревянные жалюзи
+                    .calculator-choose-list__item.calculator-choose-list__item--big(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-list-item-3.jpg)")
+                      h2.calculator-choose-list__item-title Алюминиевые жалюзи
+
+                .calculator-choose-content-tab(data-item="2")
+                  .calculator-choose-item
+                    .calculator-choose-item__main
+                      .calculator-choose-item-slider.slick--arrows-1.slick--arrows-1-2
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                            .video-btn
+                              i
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                      .calculator-choose-item-nav-slider
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                    .calculator-choose-item__about
+                      h2.subtitle-2.calculator-choose-item__about-title Алюминиевые жалюзи
+                      ul.ul.ul--sm.ul--checkbox.calculator-choose-item__about-list
+                        li Самый дешёвый вариант
+                        li Гарантия качества от польского производителя
+                        li Более 48 вариантов цветовой гаммы
+                        li Подходят для любого окна — пластикового, деревянного или мансардного
+                      ul.calculator-choose-item__about-list
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Оконная рама не открывается при закрытых жалюзи
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Менее долговечны, чем деревянные жалюзи
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Нагреваются сильнее, чем деревянные жалюзи или тканевые шторы
+                  .calculator-next-btn
+                    button(type="button").btn выбрать
+
+                .calculator-choose-content-tab(data-item="3")
+                  .calculator-choose-item
+                    .calculator-choose-item__main
+                      .calculator-choose-item-slider.slick--arrows-1.slick--arrows-1-2
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                            .video-btn
+                              i
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                      .calculator-choose-item-nav-slider
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                    .calculator-choose-item__about
+                      h2.subtitle-2.calculator-choose-item__about-title Алюминиевые жалюзи
+                      ul.ul.ul--sm.ul--checkbox.calculator-choose-item__about-list
+                        li Самый дешёвый вариант
+                        li Гарантия качества от польского производителя
+                        li Более 48 вариантов цветовой гаммы
+                        li Подходят для любого окна — пластикового, деревянного или мансардного
+                      ul.calculator-choose-item__about-list
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Оконная рама не открывается при закрытых жалюзи
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Менее долговечны, чем деревянные жалюзи
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Нагреваются сильнее, чем деревянные жалюзи или тканевые шторы
+                  .calculator-next-btn
+                    button(type="button").btn выбрать
+
+                .calculator-choose-content-tab(data-item="4")
+                  .calculator-choose-item
+                    .calculator-choose-item__main
+                      .calculator-choose-item-slider.slick--arrows-1.slick--arrows-1-2
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                            .video-btn
+                              i
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-slide
+                          .calculator-choose-item-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                      .calculator-choose-item-nav-slider
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                        .calculator-choose-item-nav-slide
+                          .calculator-choose-item-nav-slide-inner(style="background-image: url(img/calculator-horizontal-blinds/calculator-choose-item-1.jpg)")
+                    .calculator-choose-item__about
+                      h2.subtitle-2.calculator-choose-item__about-title Алюминиевые жалюзи
+                      ul.ul.ul--sm.ul--checkbox.calculator-choose-item__about-list
+                        li Самый дешёвый вариант
+                        li Гарантия качества от польского производителя
+                        li Более 48 вариантов цветовой гаммы
+                        li Подходят для любого окна — пластикового, деревянного или мансардного
+                      ul.calculator-choose-item__about-list
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Оконная рама не открывается при закрытых жалюзи
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Менее долговечны, чем деревянные жалюзи
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Нагреваются сильнее, чем деревянные жалюзи или тканевые шторы
+                  .calculator-next-btn
+                    button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 1
+                  .calculator-step-header__counter-total из 4
+                h2.subtitle-2.calculator-step-header__title Куда хотите установить рулонные шторы день-ночь?
+              .calculator-step-main
+                .calculator-step-about-1
+                  .calculator-step-about-1-item
+                    .calculator-about-thumb(style="background-image: url(img/calculator-horizontal-blinds/location-1.jpg)")
+                      h2.calculator-about-thumb__title На створку
+                    .calculator-step-about-1-item__content
+                      h3 Если у вашего окна глубокий проем изнутри, то можно прямо на него установить жалюзи
+                      ul.ul.ul--sm.ul--checkbox
+                        li Конструкция полностью закрывает окно, но стена и подоконник остаются свободными.
+                        li Будет плотно перекрывать свет, максимально защищает от яркого солнца и бликов
+                        li Делает конструкцию более легковестной
+                  .calculator-step-about-1-item
+                    .calculator-about-thumb(style="background-image: url(img/calculator-horizontal-blinds/location-2.jpg)")
+                      h2.calculator-about-thumb__title На проем
+                    .calculator-step-about-1-item__content
+                      h3 Установка отлично подходит для широких и глубоких оконных проемов.
+                      ul.ul.ul--sm.ul--checkbox
+                        li Можно установить карниз с тюлью, ничего не мешает
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Занят подоконник и ничего больше туда уже не поставишь, даже цветы.
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Для установки карниза придется выбрать только ровный оконный проем, потому, что карниз должен как можно плотнее прилегать к поверхности верхнего откоса.
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Не открывается створка — мешает карниз
+              .calculator-next-btn
+                button(type="button").btn.btn--disabled выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 2
+                  .calculator-step-header__counter-total из 4
+                h2.subtitle-2.calculator-step-header__title Выберите тип рулонных штор
+              .calculator-step-main
+                .calculator-lamels-width
+                  .calculator-lamels-width__left
+                    h2.subtitle-2 Ширина ламели
+                    .calculator-lamels-width-list
+                      .calculator-lamels-width-item(style="background-image: url(img/calculator-horizontal-blinds/lamels-width-item-1.jpg)")
+                        .calculator-lamels-width-item__number 16 мм
+                      .calculator-lamels-width-item.calculator-lamels-width-item--active(style="background-image: url(img/calculator-horizontal-blinds/lamels-width-item-2.jpg)")
+                        .calculator-lamels-width-item__number 25 мм
+                  .calculator-lamels-width__right
+                    p.text-2
+                      | Чем шире окно, тем более широкими должны быть ламели.
+                      br
+                      br
+                      | Устоявшаяся классика — 25 мм.
+                      br
+                      br
+                      | Но для небольших окон идеально подойдут 16 мм полосы, т.к. они выглядят элегантно и у них увеличенная толщина ламели — сохранятся дольше.
+                .calculator-lamels-design
+                  h2.subtitle-2 Дизайн ламели
+                  .calculator-lamels-design-list
+                    .calculator-lamels-design-item(style="background-image: url(img/calculator-horizontal-blinds/lamels-design-item-1.jpg)")
+                    .calculator-lamels-design-item(style="background-image: url(img/calculator-horizontal-blinds/lamels-design-item-2.jpg)")
+                    .calculator-lamels-design-item(style="background-image: url(img/calculator-horizontal-blinds/lamels-design-item-3.jpg)")
+                    .calculator-lamels-design-item(style="background-image: url(img/calculator-horizontal-blinds/lamels-design-item-4.jpg)")
+                    .calculator-lamels-design-item(style="background-image: url(img/calculator-horizontal-blinds/lamels-design-item-1.jpg)")
+              .calculator-next-btn
+                button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 3
+                  .calculator-step-header__counter-total из 4
+                h2.subtitle-2.calculator-step-header__title Выберите цвет ламели
+              .calculator-step-main
+                .calculator-step-fabric
+                  .pleated-fabric-catalog-nav.pleated-fabric-catalog-nav--center
+                    .pleated-fabric-catalog-nav__item-layout
+                      select.pleated-fabric-catalog-nav__item
+                        option Цвета
+                      .info-icon
+                        .info-panel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices efficitur finibus. Etiam feugiat eros felis, sed commodo nulla rhoncus non. Pellentesque quis rutrum turpis, eu consequat dui.
+                    select.pleated-fabric-catalog-nav__item
+                      option Дизайн ламели
+                  br
+                  br
+                  .pleated-fabric-catalog.pleated-fabric-catalog--md
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__hit ХИТ
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--1
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--2
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--3
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                      .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                      .pleated-fabric-catalog-item__zoom
+                      .pleated-fabric-catalog-item__footer
+                        .pleated-fabric-catalog-item__price 957 грн
+                        a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+              .calculator-next-btn
+                button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 4
+                  .calculator-step-header__counter-total из 4
+                h2.subtitle-2.calculator-step-header__title Введите размер изделия
+              .calculator-step-main
+                .calculator-step-final
+                  .calculator-step-final__header
+                    input(type="text" placeholder="Высота изделия (в мм)").input-box.calculator-step-final__size-input
+                    .calculator-step-final__video.video-btn
+                      i
+                      p Видео-инструкция поможет измерить изделие правильно
+                  .calculator-step-final-options
+                    h2.subtitle-2
+                      b Дополнительные опции
+                    .calculator-step-final-options__checkboxes
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-1" type="checkbox" name="option-1")
+                          label(for="option-1")
+                            | Замер (+ 50 грн)
+                            .custom-checkbox__box
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-2" type="checkbox" name="option-2")
+                          label(for="option-2")
+                            | Монтаж (+ 50 грн)
+                            .custom-checkbox__box
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-3" type="checkbox" name="option-3")
+                          label(for="option-3")
+                            | Доставка (+ 60 грн)
+                            .custom-checkbox__box
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-4" type="checkbox" name="option-4")
+                          label(for="option-4")
+                            | Дистанционное управление (+ 1 060 грн)
+                            .info-icon
+                              .info-panel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices efficitur finibus. Etiam feugiat eros felis, sed commodo nulla rhoncus non. Pellentesque quis rutrum turpis, eu consequat dui.
+                            .custom-checkbox__box
+                  .calculator-step-final-options
+                    .calculator-step-final-options-item
+                      h2.subtitle-2
+                        b Доставка
+                      p Самовывоз из нашего магазина. Курьерская доставка. Самовывоз из Новой Почты.
+                    .calculator-step-final-options-item
+                      h2.subtitle-2
+                        b Гарантия
+                      p Обмен/возврат товара в течение 14 дней. Фабричная гарантия на ткань и механизмы 2 года
+                    .calculator-step-final-options-item
+                      h2.subtitle-2
+                        b Оплата
+                      p Наличными, Visa/MasterCard, Приват24, оплата частями, безналичными
+              .calculator-next-btn
+                button(type="button").btn.btn--transparent.calculator-next-btn__skip ПРОПУСТИТЬ ШАГ<br> Пусть измерить замерщик
+                button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-success
+                .calculator-step-success__main
+                  h2.calculator-step-success__title Поздравляем,<br> Вы сделали отличный выбор!
+                  .calculator-step-success__price-block
+                    .calculator-step-success__price
+                      h2.calculator-step-success__price-title Ваша цена:
+                      .calculator-step-success__price-box
+                        h3.calculator-step-success__price-current <span>2 490</span> грн.
+                        h3.calculator-step-success__price-old 3 585 грн.
+                        .calculator-step-success__price-discount Скидка  30%
+                    .calculator-step-success__plus +
+                    .calculator-step-success__bonus
+                      b Ваш подарок - Жидкость для мытья окон
+                      br
+                      br
+                      | Краткое описание подарка
+                .calculator-step-success__btns
+                  button(type="button").btn перейти в корзину
+                  button(type="button").btn.btn--transparent еще заказ
+
+
+
+
+        aside.calculator-aside
+          .calculator-aside-block.calculator-aside-preview
+            h2.subtitle Предварительная стоимость
+            ul.calculator-aside-preview__list
+              li.calculator-aside-preview__item.calculator-aside-preview__item--empty
+                p.calculator-aside-preview__item-text Вы пока не выбрали какие рулонные шторы вам нужны, ничего подсчитать не можем :(
+              li.calculator-aside-preview__item
+                p.calculator-aside-preview__item-text Жалюзи
+              li.calculator-aside-preview__item
+                .calculator-aside-preview__item-thumb(style="background-image: url(img/calculator/lamels-aside-image.jpg)")
+                p.calculator-aside-preview__item-text Ламэли
+            .calculator-aside-preview__footer
+              h3 Итого:
+              h2 5 090 <span>грн.</span>
+
+          .calculator-aside-block.calculator-aside-callback
+            h2.subtitle Связаться с нами
+            .calculator-aside-callback__row
+              .main-header-top-info__phone
+                i
+                a(href='tel:+380577517507') +38(057) 751 75 07
+              .main-header-top-info__time
+                i
+                p Пн-Вс: с 9.00 до 20.00
+            a(href="#").btn.btn--md Заказать звонок
+
+
+      include ../partials/certificates
+
+
+  include ../partials/footer
+
+
+
+

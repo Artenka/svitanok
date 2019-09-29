@@ -286,11 +286,18 @@ b, strong {
   &:last-child {
    margin-bottom: 0;
   }
+
+  &.ul-point {
+   padding-left: 0;
+  }
  }
 
  &.ul--sm {
-  font-size: 12px;
-  line-height: 140%;
+
+  li {
+   font-size: 12px;
+   line-height: 140%;
+  }
  }
  &.ul--checkbox {
 
@@ -303,6 +310,10 @@ b, strong {
     position: absolute;
     top: 4px;
     left: 0;
+   }
+
+   &.ul-point {
+    padding-left: 0;
    }
   }
  }
