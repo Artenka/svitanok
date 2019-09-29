@@ -260,6 +260,9 @@
   text-transform: uppercase;
   color: #4F4F4F;
   margin-right: 23px;
+  &:first-child {
+   margin-left: 126px;
+  }
 
   .calculator-step-header__counter-current {
    width: 80px;

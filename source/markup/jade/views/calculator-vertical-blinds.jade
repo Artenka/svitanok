@@ -1,0 +1,468 @@
+extends ../layouts/main
+
+block contents
+  include ../partials/header
+
+  .main#services
+    .breadcrumbs
+      .main-wrapper
+        a(href="#").breadcrumbs__item Главная
+        p.breadcrumbs__item Калькулятор горизонтальных жалюзи
+
+    .main-wrapper
+      .calculator-layout
+        section.calculator-section
+          .calculator
+            .calculator-block.calculator-step
+              .calculator-step-header
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 1
+                  .calculator-step-header__counter-total из 5
+                h2.subtitle-2.calculator-step-header__title Куда хотите установить вертикальные жалюзи?
+              .calculator-step-main
+                .calculator-step-about-1
+                  .calculator-step-about-1-item
+                    .calculator-about-thumb(style="background-image: url(img/calculator-vertical-blinds/location-1.jpg)")
+                      h2.calculator-about-thumb__title На проём
+                    .calculator-step-about-1-item__content
+                      h3 Если у вашего окна глубокий проем изнутри, то можно прямо на него установить жалюзи
+                      ul.ul.ul--sm.ul--checkbox
+                        li Конструкция полностью закрывает окно, но стена и подоконник остаются свободными.
+                        li Будет плотно перекрывать свет, максимально защищает от яркого солнца и бликов
+                        li Делает конструкцию более легковестной
+                  .calculator-step-about-1-item
+                    .calculator-about-thumb(style="background-image: url(img/calculator-vertical-blinds/location-2.jpg)")
+                      h2.calculator-about-thumb__title В проём
+                    .calculator-step-about-1-item__content
+                      h3 Установка отлично подходит для широких и глубоких оконных проемов.
+                      ul.ul.ul--sm.ul--checkbox
+                        li Можно установить карниз с тюлью, ничего не мешает
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Занят подоконник и ничего больше туда уже не поставишь, даже цветы.
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Для установки карниза придется выбрать только ровный оконный проем, потому, что карниз должен как можно плотнее прилегать к поверхности верхнего откоса.
+                        li.ul-point.ul-point--minus
+                          .ul-point__icon
+                          p.ul-point__text Не открывается створка — мешает карниз
+              .calculator-next-btn
+                button(type="button").btn.btn--disabled выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 2
+                  .calculator-step-header__counter-total из 5
+                h2.subtitle-2.calculator-step-header__title Выберите ширину ламели
+              .calculator-step-main
+                .calculator-lamels-width
+                  .calculator-lamels-width__left
+                    h2.subtitle-2 Ширина ламели
+                    .calculator-lamels-width-list
+                      .calculator-lamels-width-item(style="background-image: url(img/calculator-vertical-blinds/lamels-width-item-1.jpg)")
+                        .calculator-lamels-width-item__number 89 мм
+                      .calculator-lamels-width-item.calculator-lamels-width-item--active(style="background-image: url(img/calculator-vertical-blinds/lamels-width-item-2.jpg)")
+                        .calculator-lamels-width-item__number 127 мм
+                  .calculator-lamels-width__right
+                    p.text-2
+                      | Чем шире окно, тем более широкими должны быть ламели.
+                      br
+                      br
+                      | То есть для небольших оконных проемов подойдут жалюзи с узкими ламелями 89 мм (их ещё называют «американскими»), для окон с существенными габаритами или для организации межкомнатной перегородки, лучше применять широкие ламели 127 мм (их называют «европейскими»).
+              .calculator-next-btn
+                button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 3
+                  .calculator-step-header__counter-total из 5
+                h2.subtitle-2.calculator-step-header__title Выберите текстуру ткани (можно несколько)
+              .calculator-step-main
+                .calculator-step-texture
+                  .calculator-step-texture-item
+                    .calculator-about-thumb(style="background-image: url(img/calculator-vertical-blinds/texture-1.jpg)")
+                      h2.calculator-about-thumb__title Однотонные
+                    .text-2.calculator-step-texture-item__content
+                      | Однотонные жалюзи подойдут к любому стилю из-за своей нейтральности.
+                      br
+                      br
+                      | Шторы отлично работают на контрасте, поэтому будут идеальны в том случае, если у Вас обои с рисунком.
+                      br
+                      br
+                      | При выборе цвета ориентируйтесь на цвет стен в помещении — выигрышно выбирать на несколько оттенков светлее или темнее.
+                      br
+                      br
+                      | Однотонные жалюзи подойдут к любому стилю из-за своей нейтральности.
+                      br
+                      br
+                      | Шторы отлично работают на контрасте, поэтому будут идеальны в том случае, если у Вас обои с рисунком.
+                      br
+                      br
+                      | При выборе цвета ориентируйтесь на цвет стен в помещении — выигрышно выбирать на несколько оттенков светлее или темнее.
+                  .calculator-step-texture-item
+                    .calculator-about-thumb(style="background-image: url(img/calculator-vertical-blinds/texture-2.jpg)")
+                      h2.calculator-about-thumb__title С легкой текстурой
+                    .text-2.calculator-step-texture-item__content
+                      | Если Вам однотонный цвет кажется скучным, а рисунки считаете перебором, то обратите внимание на ткани с лёгкой текстурой.
+                      br
+                      br
+                      | Если Ваше помещение маленькое — не распыляйтесь на множество цветов и фактур. Достаточно выбрать один основной цвет, причем такой, чтобы все материалы гармонировали с ним.
+                      br
+                      br
+                      | Хорошо, когда мебель и шторы находятся в одном цветовом спектре
+                  .calculator-step-texture-item
+                    .calculator-about-thumb(style="background-image: url(img/calculator-vertical-blinds/texture-3.jpg)")
+                      h2.calculator-about-thumb__title С рисунком
+                    .text-2.calculator-step-texture-item__content
+                      | Если Ваши обои однотонные светлые, то выигрышно будут смотреться шторы с яркой контрастной картинкой. На ней можно фокусировать всё внимание.
+                      br
+                      br
+                      | То же самое относится и к окнам, расположенным на солнечной стороне.
+                      br
+                      br
+                      | При выборе цвета ориентируйтесь на цвет стен в помещении — выигрышно выбирать на несколько оттенков светлее или темнее.
+              .calculator-next-btn
+                button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 4
+                  .calculator-step-header__counter-total из 5
+                h2.subtitle-2.calculator-step-header__title Выберите ткань жалюзи
+              .calculator-step-main
+                .calculator-step-fabric
+                  .pleated-fabric-catalog-nav.pleated-fabric-catalog-nav--center
+                    select.pleated-fabric-catalog-nav__item
+                      option Цвета
+                    select.pleated-fabric-catalog-nav__item
+                      option Плотность ткани
+                    select.pleated-fabric-catalog-nav__item
+                      option Текстура ткани
+                  .tabs
+                    .tab.tab--active(data-item="1") Престижный (27)
+                    .tab(data-item="2") Оптимальный
+                    .tab(data-item="3") Практичный
+                  .content-tabs
+                    .content-tab.content-tab--active(data-item="1")
+                      .pleated-fabric-catalog.pleated-fabric-catalog--md
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__hit ХИТ
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--1
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--2
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--3
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .content-tab(data-item="2")
+                      .pleated-fabric-catalog.pleated-fabric-catalog--md
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__hit ХИТ
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--1
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--2
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--3
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                    .content-tab(data-item="3")
+                      .pleated-fabric-catalog.pleated-fabric-catalog--md
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__hit ХИТ
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--1
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--2
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--3
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+                        .pleated-fabric-catalog-item(style="background-image: url(img/pleated-blinds/fabric-catalog/fabric-catalog-item-1.jpg)")
+                          .pleated-fabric-catalog-item__brightness.pleated-fabric-catalog-item__brightness--4
+                          .pleated-fabric-catalog-item__zoom
+                          .pleated-fabric-catalog-item__footer
+                            .pleated-fabric-catalog-item__price 957 грн
+                            a(href="#").pleated-fabric-catalog-item__cart Добавить в корзину
+              .calculator-next-btn
+                button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-header
+                button(type="button").calculator-step-header__prev.prev-btn Назад
+                .calculator-step-header__counter
+                  .calculator-step-header__counter-current шаг 5
+                  .calculator-step-header__counter-total из 5
+                h2.subtitle-2.calculator-step-header__title Введите размер изделия
+              .calculator-step-main
+                .calculator-step-final
+                  .calculator-step-final__header
+                    input(type="text" placeholder="Высота изделия (в мм)").input-box.calculator-step-final__size-input
+                    .calculator-step-final__video.video-btn
+                      i
+                      p Видео-инструкция поможет измерить изделие правильно
+                  .calculator-step-final-options
+                    h2.subtitle-2
+                      b Дополнительные опции
+                    .calculator-step-final-options__checkboxes
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-1" type="checkbox" name="option-1")
+                          label(for="option-1")
+                            | Замер (+ 50 грн)
+                            .custom-checkbox__box
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-2" type="checkbox" name="option-2")
+                          label(for="option-2")
+                            | Монтаж (+ 50 грн)
+                            .custom-checkbox__box
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-3" type="checkbox" name="option-3")
+                          label(for="option-3")
+                            | Доставка (+ 60 грн)
+                            .custom-checkbox__box
+                      .calculator-step-final-options__checkboxes-item
+                        .custom-checkbox.custom-checkbox--radio
+                          input(id="option-4" type="checkbox" name="option-4")
+                          label(for="option-4")
+                            | Дистанционное управление (+ 1 060 грн)
+                            .info-icon
+                              .info-panel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices efficitur finibus. Etiam feugiat eros felis, sed commodo nulla rhoncus non. Pellentesque quis rutrum turpis, eu consequat dui.
+                            .custom-checkbox__box
+                  .calculator-step-final-options
+                    .calculator-step-final-options-item
+                      h2.subtitle-2
+                        b Доставка
+                      p Самовывоз из нашего магазина. Курьерская доставка. Самовывоз из Новой Почты.
+                    .calculator-step-final-options-item
+                      h2.subtitle-2
+                        b Гарантия
+                      p Обмен/возврат товара в течение 14 дней. Фабричная гарантия на ткань и механизмы 2 года
+                    .calculator-step-final-options-item
+                      h2.subtitle-2
+                        b Оплата
+                      p Наличными, Visa/MasterCard, Приват24, оплата частями, безналичными
+              .calculator-next-btn
+                button(type="button").btn.btn--transparent.calculator-next-btn__skip ПРОПУСТИТЬ ШАГ<br> Пусть измерить замерщик
+                button(type="button").btn выбрать
+
+
+            .calculator-block.calculator-step
+              .calculator-step-success
+                .calculator-step-success__main
+                  h2.calculator-step-success__title Поздравляем,<br> Вы сделали отличный выбор!
+                  .calculator-step-success__price-block
+                    .calculator-step-success__price
+                      h2.calculator-step-success__price-title Ваша цена:
+                      .calculator-step-success__price-box
+                        h3.calculator-step-success__price-current <span>2 490</span> грн.
+                        h3.calculator-step-success__price-old 3 585 грн.
+                        .calculator-step-success__price-discount Скидка  30%
+                    .calculator-step-success__plus +
+                    .calculator-step-success__bonus
+                      b Ваш подарок - Жидкость для мытья окон
+                      br
+                      br
+                      | Краткое описание подарка
+                .calculator-step-success__btns
+                  button(type="button").btn перейти в корзину
+                  button(type="button").btn.btn--transparent еще заказ
+
+
+
+
+        aside.calculator-aside
+          .calculator-aside-block.calculator-aside-preview
+            h2.subtitle Предварительная стоимость
+            ul.calculator-aside-preview__list
+              li.calculator-aside-preview__item.calculator-aside-preview__item--empty
+                p.calculator-aside-preview__item-text Вы пока не выбрали какие рулонные шторы вам нужны, ничего подсчитать не можем :(
+              li.calculator-aside-preview__item
+                p.calculator-aside-preview__item-text Жалюзи
+              li.calculator-aside-preview__item
+                .calculator-aside-preview__item-thumb(style="background-image: url(img/calculator/lamels-aside-image.jpg)")
+                p.calculator-aside-preview__item-text Ламэли
+            .calculator-aside-preview__footer
+              h3 Итого:
+              h2 5 090 <span>грн.</span>
+
+          .calculator-aside-block.calculator-aside-callback
+            h2.subtitle Связаться с нами
+            .calculator-aside-callback__row
+              .main-header-top-info__phone
+                i
+                a(href='tel:+380577517507') +38(057) 751 75 07
+              .main-header-top-info__time
+                i
+                p Пн-Вс: с 9.00 до 20.00
+            a(href="#").btn.btn--md Заказать звонок
+
+
+      include ../partials/certificates
+
+
+  include ../partials/footer
+
+
+
+
