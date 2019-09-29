@@ -261,6 +261,25 @@
    }
   }
  }
+
+ .ul-point--green {
+
+  &.ul-point--plus {
+
+   .ul-point__icon {
+    background: #3CB54B;
+   }
+  }
+  &.ul-point--minus {
+
+   .ul-point__icon {
+    border-color: #3CB54B;
+    &:before {
+     background: #3CB54B;
+    }
+   }
+  }
+ }
 }
 
 .info-icon {
@@ -276,6 +295,10 @@
    opacity: 1;
    z-index: 10;
   }
+ }
+
+ &.info-icon--green {
+  background-image: url(../img/common/info-icon-green.svg);
  }
 }
 
@@ -294,4 +317,46 @@
  z-index: -1;
  transition: 0.2s;
  opacity: 0;
+}
+
+.color-picker {
+ display: flex;
+
+ .color-picker__item {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 18px;
+  position: relative;
+  cursor: pointer;
+  &:before {
+   content: '';
+   width: 36px;
+   height: 36px;
+   border-radius: 50%;
+   border: 1px solid #FFA200;
+   position: absolute;
+   top: calc(50% - 18px);
+   left: calc(50% - 18px);
+   opacity: 0;
+   transition: 0.5s;
+  }
+  &:last-child {
+   margin-right: 0;
+  }
+
+  &.color-picker__item--active {
+
+   &:before {
+    opacity: 1;
+   }
+  }
+ }
+
+ &.color-picker--green {
+
+  .color-picker__item:before {
+   border-color: #3CB54B;
+  }
+ }
 }

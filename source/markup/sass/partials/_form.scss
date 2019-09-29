@@ -182,6 +182,16 @@
     opacity: 0;
    }
   }
+
+  &.custom-checkbox--green {
+
+   .custom-checkbox__box {
+    border-color: #3CB54B;
+    &:before {
+     background: #3CB54B;
+    }
+   }
+  }
  }
 }
 

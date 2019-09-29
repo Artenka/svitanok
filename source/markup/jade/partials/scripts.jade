@@ -48,6 +48,14 @@ script.
     // basic tabs change
     changeTabs('tab', 'content-tab');
 
+    //color picker
+    $('.color-picker__item').click(function(){
+      if(!$(this).hasClass('color-picker__item--active')){
+        $(this).closest('.color-picker').find('.color-picker__item--active').removeClass('color-picker__item--active');
+        $(this).addClass('color-picker__item--active');
+      }
+    });
+
     // products slider
     $('.home-products-slider--md').slick({
       adaptiveHeight: true,
