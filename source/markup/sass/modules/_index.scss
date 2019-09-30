@@ -337,6 +337,7 @@ input, textarea, select, .input, .textarea, .select {
  display: block;
  border: none;
  border-bottom: 1px solid #BDBDBD;
+ border-radius: 0;
  background: transparent;
  color: #000000;
  font-family: Roboto, sans-serif;
@@ -360,6 +361,10 @@ input, textarea, select, .input, .textarea, .select {
    border-color: #018DBD;
   }
  }
+
+ &.input--sm {
+  font-size: 12px;
+ }
 }
 
 textarea {
@@ -368,7 +373,9 @@ textarea {
 
 select {
  -webkit-appearance: none;
+ background: url(../img/common/dropdown-arrow-2.svg) no-repeat center right;
  cursor: pointer;
+ padding: 10px 0;
 
  &.input-box {
   background: url(../img/common/dropdown-arrow.svg) no-repeat center right 20px, #fff;
@@ -377,6 +384,7 @@ select {
 
 label {
  display: block;
+ line-height: 140%;
 }
 
 
