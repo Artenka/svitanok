@@ -344,10 +344,11 @@ input, textarea, select, .input, .textarea, .select {
  font-size: 14px;
  outline: none;
  transition: 0.5s;
- padding: 10px 30px;
+ padding: 10px 0;
 
  &.input--phone {
   background: url(../img/common/phone-icon-2.svg) no-repeat center left;
+  padding-left: 30px;
  }
 
  &.input-box {

@@ -1,0 +1,89 @@
+.popup.popup-offer {
+ width: 850px;
+ display: flex;
+ align-items: flex-start;
+ padding: 33px 78px 55px 41px;
+
+ .popup-offer__left {
+  width: 284px;
+  margin-right: 44px;
+ }
+ .popup-offer__right {
+  flex: 1;
+ }
+}
+
+.popup-offer-date {
+ min-height: 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: rgba(255, 255, 254, 0.85);
+ box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+ border-radius: 6px;
+ font-size: 17px;
+ line-height: 20px;
+ text-align: center;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ color: #000000;
+ padding: 10px;
+ position: relative;
+ &:before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 0 0 6px 6px;
+  background: #FFA200;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ }
+}
+.popup-offer-thumb {
+ width: 284px;
+ height: 284px;
+ border: 1px solid #C4C4C4;
+ border-radius: 5px;
+ background: url(../img/common/popups/offer/cat-image.jpg) no-repeat center / cover;
+ margin-top: 27px;
+}
+
+.popup-offer-text {
+ font-size: 13px;
+ line-height: 150%;
+ margin-top: 25px;
+}
+
+.popup-offer-contacts {
+ margin-top: 23px;
+
+ h2 {
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #000000;
+ }
+}
+
+.popup-offer-contacts-list {
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+ margin-top: 15px;
+
+ .popup-offer-contacts-list__col {
+
+  .main-header-top-info__phone, .main-header-top-info__time {
+   margin-top: 14px;
+   &:first-child {
+    margin-top: 0;
+   }
+
+   a, p {
+    font-size: 15px;
+    line-height: 24px;
+   }
+  }
+ }
+}

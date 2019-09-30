@@ -45,4 +45,22 @@
   right: 30px;
   z-index: 3;
  }
+
+ .popup__header {
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 18px;
+ }
+
+ &.popup--header {
+  padding: 0;
+ }
+}
+
+.popup-header {
+ background: #FBF5F3;
+ padding: 20px 42px;
+}
+
+.popup-main {
+ padding: 35px 42px 25px;
 }

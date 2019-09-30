@@ -1,0 +1,28 @@
+.popup.popup-price {
+ width: 630px;
+
+ .home-action-form {
+  margin-top: 0;
+ }
+}
+
+.popup-price-checkboxes {
+ margin-top: 45px;
+
+ h2 {
+  margin-bottom: 15px;
+ }
+
+ .custom-checkbox {
+  margin-bottom: 18px;
+  &:last-child {
+   margin-bottom: 0;
+  }
+ }
+}
+
+.popup-price-btn {
+ width: 200px;
+ display: block;
+ margin: 40px auto 0;
+}

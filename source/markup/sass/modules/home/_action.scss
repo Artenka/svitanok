@@ -55,4 +55,20 @@
  .home-action-form__checkbox {
   margin-top: 6px;
  }
+
+ &.home-action-form--2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  .home-action-form__formgroup {
+   flex: 1;
+   &:nth-child(2n+2) {
+    margin-right: 0;
+   }
+  }
+
+  .home-action-form__checkbox {
+   margin-top: 20px;
+  }
+ }
 }

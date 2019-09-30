@@ -1,0 +1,38 @@
+.popup-layout#popup-price
+  .popup-scrollarea
+    .popup.popup--header.popup-price
+      .popup__close
+      .popup-header
+        h2.subtitle Узнать стоимость товара
+      .popup-main
+        .home-action-form.home-action-form--2
+          .home-action-form__formgroup
+            input(placeholder="Ваше имя").home-action-form__input
+          .home-action-form__formgroup
+            input(value="+38").home-action-form__input.input--phone
+          br
+          .custom-checkbox.home-action-form__checkbox
+            input(id="checkbox-agreement-3" type="checkbox" name="checkbox-agreement-3")
+            label(for="checkbox-agreement-3")
+              | Даю согласие на обработку моих данных, в соответствии с Пользовательским соглашением
+              .custom-checkbox__box
+
+        .popup-price-checkboxes
+          h2.popup-price-checkboxes__title.title-3 Когда вам перезвонить?
+          .custom-checkbox.custom-checkbox--radio
+            input(id="option-1" type="checkbox" name="option-1")
+            label(for="option-1")
+              | В течении 30 минут
+              .custom-checkbox__box
+          .custom-checkbox.custom-checkbox--radio
+            input(id="option-2" type="checkbox" name="option-2")
+            label(for="option-2")
+              | С 9.00 до 12.00
+              .custom-checkbox__box
+          .custom-checkbox.custom-checkbox--radio
+            input(id="option-3" type="checkbox" name="option-3")
+            label(for="option-3")
+              | С 12.00 до 18.00
+              .custom-checkbox__box
+
+        button(type="submit").btn.btn--2.popup-price-btn записаться
