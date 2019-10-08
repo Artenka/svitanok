@@ -1,5 +1,11 @@
 .home-portfolio {
  padding: 70px 0 35px;
+
+ .subtitle {
+  @include tablet {
+   max-width: 500px;
+  }
+ }
 }
 
 .home-portfolio-tabs-layout {
@@ -15,6 +21,9 @@
  border: 1px solid #BDBDBD;
  padding: 12px 0;
  margin: 22px auto 0;
+ @include tablet-mobile {
+  padding: 0;
+ }
 
  .home-portfolio-tabs__item {
   //width: 25%;
@@ -33,6 +42,19 @@
   transition: 0.5s;
   cursor: pointer;
   position: relative;
+  @include tablet-mobile {
+   border-top: 1px solid #BDBDBD;
+   padding: 20px;
+  }
+  @include tablet {
+   width: 50%;
+  }
+  @include mobile {
+   width: 100%;
+   border-right: none;
+   border-bottom: 1px solid #BDBDBD;
+   padding: 15px 10px;
+  }
   &:before {
    content: '';
    width: 82px;
@@ -43,9 +65,33 @@
    left: calc(50% - 41px);
    opacity: 0;
    transition: 0.5s;
+   @include tablet-mobile {
+    bottom: 0;
+   }
+   @include mobile {
+    width: 60px;
+    height: 3px;
+    left: calc(50% - 30px);
+   }
+  }
+  &:nth-child(1), &:nth-child(2) {
+   @include tablet {
+    border-top: 0;
+   }
   }
   &:last-child {
    border-right: 0;
+   @include tablet {
+    border-right: 1px solid #BDBDBD;
+   }
+   @include mobile {
+    border-bottom: none;
+   }
+  }
+  &:nth-child(2n+2) {
+   @include tablet {
+    border-right: 0;
+   }
   }
 
   &.home-portfolio-tabs__item--active {
@@ -105,6 +151,9 @@
 .home-portfolio-main {
  display: flex;
  margin-top: 20px;
+ @include mobile {
+  margin-top: 40px;
+ }
 
  &.home-portfolio-main--green {
 
@@ -128,6 +177,12 @@
  border: 1px solid #BDBDBD;
  padding: 24px 20px;
  margin-right: 4px;
+ @include tablet {
+  width: 230px;
+ }
+ @include mobile {
+  display: none;
+ }
 
  .home-portfolio-menu__title {
   border-bottom: 1px solid #BDBDBD;
@@ -173,9 +228,20 @@
  grid-auto-rows: 110px;
  grid-auto-flow: row dense;
  grid-gap: 4px;
+ @include tablet {
+  grid-template-columns: repeat(3, 156px);
+ }
+ @include mobile {
+  width: 310px;
+  display: block;
+  //grid-template-columns: repeat(2, 153px);
+ }
 
  .home-portfolio-gallery__image {
   background: no-repeat center / cover;
+  @include mobile {
+   height: 220px;
+  }
 
   &.home-portfolio-gallery__image--lg {
    grid-row: span 2;
@@ -193,6 +259,14 @@
    color: #4F4F4F;
    padding-right: 10px;
    cursor: pointer;
+   @include mobile {
+    //display: none!important;
+    border: none;
+    background: url(../img/common/arrow-right-3.svg) no-repeat center right 45px / 16px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0;
+   }
   }
  }
 }

@@ -11,6 +11,10 @@
  padding: 18px 80px;
  transition: 0.5s;
  cursor: pointer;
+ @include mobile {
+  font-size: 10px;
+  padding: 14px 40px;
+ }
  &:hover {
   transform: scale(1.02);
   color: #FFFFFF;
@@ -18,14 +22,23 @@
 
  &.btn--2 {
   padding: 18px 20px;
+  @include mobile {
+   padding: 14px 15px;
+  }
  }
  &.btn--sm {
   font-size: 9px;
   letter-spacing: 0.03em;
   padding: 7px 30px;
+  @include mobile {
+   padding: 7px 15px;
+  }
  }
  &.btn--md {
   padding: 13px 25px;
+  @include mobile {
+   padding: 10px 15px;
+  }
  }
 
  &.btn--transparent {
@@ -154,6 +167,10 @@
   background: #E60D36;
   transition: 0.5s;
   position: relative;
+  @include mobile {
+   width: 40px;
+   height: 40px;
+  }
   &:before {
    content: '';
    width: 0;
@@ -164,6 +181,11 @@
    position: absolute;
    top: calc(50% - 5px);
    left: calc(50% - 4px);
+   @include mobile {
+    border-width: 4px 0 4px 6px;
+    top: calc(50% - 3px);
+    left: calc(50% - 2px);
+   }
   }
  }
  p {
@@ -173,6 +195,11 @@
   letter-spacing: 0.03em;
   color: #FFFFFF;
   margin-left: 25px;
+  @include mobile {
+   margin-left: 15px;
+   font-size: 12px;
+   line-height: 130%;
+  }
  }
 
  &.video-btn--download {

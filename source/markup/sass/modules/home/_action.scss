@@ -1,6 +1,10 @@
 .home-action {
  background: url(../img/home/action/home-action-bg.jpg) no-repeat center, #F9F5F3;
  padding: 45px 0 25px;
+ @include mobile {
+  background: url(../img/home/action/home-action-bg.jpg) no-repeat center left calc(50% - 210px) / cover, #F9F5F3;
+  padding: 30px 0 20px;
+ }
 
  &.home-action--3 {
   background: url(../img/home/action/home-action-bg-3.jpg);
@@ -10,17 +14,27 @@
 
 .home-action-main {
  width: 540px;
+ @include mobile {
+  width: 100%;
+ }
 
  .home-action-main__title {
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.03em;
+  @include mobile {
+   font-size: 22px;
+  }
  }
  .home-action-main__subtitle {
   font-size: 19px;
   line-height: 140%;
   letter-spacing: 0.02em;
   margin-top: 12px;
+  @include mobile {
+   font-size: 14px;
+   margin-top: 7px;
+  }
  }
 }
 
@@ -30,18 +44,30 @@
  .home-action-form__formgroup {
   width: 500px;
   display: flex;
+  @include mobile {
+   width: 100%;
+   flex-direction: column;
+  }
  }
 
  .home-action-form__input {
   flex: 1;
   color: #0185BD;
   margin-right: 30px;
+  @include mobile {
+   flex: auto;
+   width: 100%;
+   margin: 0 0 15px;
+  }
  }
  .home-action-form__submit {
   width: 200px;
   display: block;
   padding-left: 10px;
   padding-right: 10px;
+  @include mobile {
+   width: 100%;
+  }
  }
 
  .home-action-form__disclaimer {
@@ -50,10 +76,16 @@
   letter-spacing: 0.02em;
   color: #000000;
   margin-top: 27px;
+  @include mobile {
+   margin-top: 20px;
+  }
  }
 
  .home-action-form__checkbox {
   margin-top: 6px;
+  @include mobile {
+   margin-top: 10px;
+  }
  }
 
  &.home-action-form--2 {

@@ -1,3 +1,10 @@
+header.main-header-mobile
+  .main-wrapper
+    .logo
+    button.hamburger.hamburger--slider(type='button')
+      span.hamburger-box
+        span.hamburger-inner
+
 header.main-header
   .main-header-top
     .main-wrapper
@@ -65,14 +72,16 @@ header.main-header
 script.
   $(function(){
     var top;
-    $(window).scroll(function () {
-      top = $(document).scrollTop();
-      if(top > 108) {
-        $('.main-header-bottom').addClass('main-header-bottom--fixed');
-        $('.main-header-top-info').addClass('main-header-top-info--fixed');
-      } else {
-        $('.main-header-bottom').removeClass('main-header-bottom--fixed');
-        $('.main-header-top-info').removeClass('main-header-top-info--fixed');
-      }
-    });
+    if ($(window).width() > 720) {
+      $(window).scroll(function () {
+        top = $(document).scrollTop();
+        if (top > 108) {
+          $('.main-header-bottom').addClass('main-header-bottom--fixed');
+          $('.main-header-top-info').addClass('main-header-top-info--fixed');
+        } else {
+          $('.main-header-bottom').removeClass('main-header-bottom--fixed');
+          $('.main-header-top-info').removeClass('main-header-top-info--fixed');
+        }
+      });
+    }
   });

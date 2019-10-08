@@ -45,6 +45,12 @@ script.
       preferredCountries: ['ua', 'ru', 'by', 'kz']
     });
 
+    // mobile header toggle
+    $('.hamburger').click(function(){
+      $(this).toggleClass('is-active');
+      $('.main-header').toggleClass('main-header--active');
+    });
+
     // basic tabs change
     changeTabs('tab', 'content-tab');
 
@@ -71,8 +77,58 @@ script.
       slidesToShow: 2,
       slidesToScroll: 1,
       arrows: true,
-      dots: false
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
+
+    // reviews slider
+    if ($(window).width() < 1240) {
+      $('.home-reviews-list').slick({
+        adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 720,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    }
+
+    if ($(window).width() < 720) {
+      // footer diplomas slider
+      $('.main-footer-diplomas').slick({
+        adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false
+      });
+
+      // gallery slider
+      $('.home-portfolio-gallery').slick({
+        adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false
+      });
+    }
 
     // banner slider
     $('.banner-slider').slick({

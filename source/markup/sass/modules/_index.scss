@@ -8,6 +8,10 @@ body {
  color: #000000;
  font-size: 15px;
  line-height: normal;
+ @include mobile {
+  font-size: 14px;
+  padding-top: 69px;
+ }
 }
 
 .main-wrapper {
@@ -22,6 +26,9 @@ body {
 
  &.main-wrapper--p {
   padding: 0 30px;
+  @include tablet-mobile {
+   padding: 0;
+  }
  }
 }
 

@@ -16,13 +16,25 @@
  z-index: 2;
  outline: none;
  cursor: pointer;
+ @include mobile {
+  width: 60px;
+  height: 60px;
+  background-size: 20%;
+  bottom: calc(50% - 30px);
+ }
 
  &.slick-prev {
   left: -49px;
   transform: scale(-1);
+  @include mobile {
+   left: -30px;
+  }
  }
  &.slick-next {
   right: -49px;
+  @include mobile {
+   right: -30px;
+  }
  }
 }
 
