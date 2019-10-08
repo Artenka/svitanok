@@ -60,6 +60,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  @include mobile {
+   padding: 35px 20px 15px;
+  }
  }
 
  .home-about-2-main__title {

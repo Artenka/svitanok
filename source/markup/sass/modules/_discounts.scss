@@ -1,5 +1,16 @@
 #discounts {
 
+ .home-products-slide.home-products-slide--lg {
+  @include tablet {
+   width: 355px;
+  }
+
+  .home-products-slide-inner {
+   @include tablet {
+    height: 355px;
+   }
+  }
+ }
 }
 
 .discounts-banner-section {
@@ -7,13 +18,26 @@
 }
 
 .discounts-banner {
- height: 350px;
+ min-height: 350px;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
  background: no-repeat center / cover;
  padding: 47px 0 44px 370px;
  margin-top: 23px;
+ @include tablet-mobile {
+  min-height: 0;
+ }
+ @include tablet {
+  padding: 30px 0 25px 150px;
+ }
+ @include mobile {
+  width: 100vw;
+  align-items: center;
+  padding: 25px 15px 20px;
+  position: relative;
+  left: calc(155px - 50vw);
+ }
 
  .discounts-banner__date {
   background: rgba(255, 255, 254, 0.5);
@@ -25,6 +49,11 @@
   text-transform: uppercase;
   color: #000000;
   padding: 19px 30px;
+  @include mobile {
+   font-size: 14px;
+   line-height: 18px;
+   padding: 14px 20px;
+  }
  }
 
  .discounts-banner__title {
@@ -34,16 +63,35 @@
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-top: 17px;
+  @include tablet {
+   font-size: 36px;
+   line-height: 130%;
+  }
+  @include mobile {
+   font-size: 24px;
+   line-height: 130%;
+  }
 
   span {
    font-size: 40px;
    line-height: 45px;
    letter-spacing: 0.02em;
+   @include tablet {
+    font-size: 36px;
+    line-height: 130%;
+   }
+   @include mobile {
+    font-size: 24px;
+    line-height: 130%;
+   }
   }
  }
 
  .discounts-banner__btn {
   margin-top: 28px;
+  @include mobile {
+   margin-top: 20px;
+  }
  }
 }
 

@@ -9,19 +9,51 @@
 
   .home-about-2-main__left {
    padding-right: 115px;
+   @include mobile {
+    padding-right: 0;
+   }
   }
   .home-about-2-main__right {
    width: 480px;
+   @include tablet-mobile {
+    width: 100%;
+   }
+   @include mobile {
+    margin-bottom: 210px;
+   }
   }
+
   .home-about-2-main__right-image {
    width: 525px;
    background-image: url(../img/about/founder/founder-photo.jpg);
+   @include tablet-mobile {
+    width: 100%;
+   }
+  }
+
+  .home-about-2-main__right-text {
+   @include mobile {
+    background: #FBF5F3;
+    bottom: -210px;
+   }
   }
  }
 }
 
 .about-reviews-section {
  margin-top: 75px;
+ @include tablet {
+  margin-top: 50px;
+ }
+ @include mobile {
+  margin-top: 40px;
+ }
+
+ .title {
+  @include tablet {
+   width: 500px;
+  }
+ }
 
  .advantages-slider {
   margin-top: 25px;
@@ -36,11 +68,27 @@
 
 .about-catalog {
  display: flex;
+ flex-wrap: wrap;
  align-items: flex-start;
  margin-top: 30px;
+ position: relative;
+ @include mobile {
+  padding-bottom: 80px;
+ }
 
  .about-catalog__col {
   flex: 1;
+  @include mobile {
+   flex: initial;
+   width: 50%;
+  }
+  &:nth-child(3) {
+   @include mobile {
+    position: absolute;
+    top: 324px;
+    right: 0;
+   }
+  }
  }
 }
 
@@ -51,6 +99,11 @@
  letter-spacing: 0.03em;
  color: #FFA200;
  margin: 40px 0 25px;
+ @include mobile {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 20px 0 15px;
+ }
  &:first-child {
   margin-top: 0;
  }
@@ -70,6 +123,10 @@
  display: flex;
  align-items: center;
  margin-bottom: 25px;
+ @include mobile {
+  min-height: 50px;
+  margin-bottom: 15px;
+ }
  &:last-child {
   margin-bottom: 0;
  }
@@ -80,10 +137,15 @@
   border: 1px solid #C4C4C4;
   border-radius: 5px;
   margin-right: 10px;
+  @include mobile {
+   width: 30px;
+   height: 30px;
+   margin-right: 7px;
+  }
  }
 
  .about-catalog-item__content {
-
+  flex: 1;
  }
 
  .about-catalog-item__name {
@@ -92,6 +154,9 @@
   letter-spacing: 0.03em;
   color: #000;
   margin: 3px 0;
+  @include mobile {
+   font-size: 12px;
+  }
  }
  .about-catalog-item__link {
   font-size: 12px;

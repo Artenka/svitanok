@@ -21,6 +21,9 @@
   grid-auto-rows: 265px;
   grid-auto-flow: row dense;
   grid-gap: 30px;
+  @include mobile {
+   display: block;
+  }
  }
 }
 
@@ -39,12 +42,16 @@
   margin: 0 10px;
  }
  @include mobile {
+  width: 100%;
   margin: 0 5px;
  }
  &:nth-child(3n+3) {
   margin-right: 0;
   @include tablet {
    margin-right: 10px;
+  }
+  @include mobile {
+   margin-right: 5px;
   }
  }
 

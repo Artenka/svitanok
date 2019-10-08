@@ -62,6 +62,13 @@ script.
       }
     });
 
+    // checkout aside toggle
+    if ($(window).width() < 1240) {
+      $('.checkout-aside .checkout-aside-block--order .subtitle').click(function () {
+        $('.checkout-aside').toggleClass('checkout-aside--active');
+      });
+    }
+
     // products slider
     $('.home-products-slider--md').slick({
       adaptiveHeight: true,
@@ -110,7 +117,17 @@ script.
 
     if ($(window).width() < 720) {
       // footer diplomas slider
-      $('.main-footer-diplomas').slick({
+      //$('.main-footer-diplomas').slick({
+      //  adaptiveHeight: true,
+      //  infinite: true,
+      //  slidesToShow: 1,
+      //  slidesToScroll: 1,
+      //  arrows: true,
+      //  dots: false
+      //});
+
+      // gallery slider
+      $('.home-portfolio-gallery').slick({
         adaptiveHeight: true,
         infinite: true,
         slidesToShow: 1,
@@ -119,8 +136,8 @@ script.
         dots: false
       });
 
-      // gallery slider
-      $('.home-portfolio-gallery').slick({
+      // products list slider
+      $('.home-products-list').slick({
         adaptiveHeight: true,
         infinite: true,
         slidesToShow: 1,

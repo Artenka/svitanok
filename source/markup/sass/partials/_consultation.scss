@@ -2,6 +2,9 @@
  background: url(../img/common/consultation/consultation-bg.jpg) no-repeat center / cover, #F9F5F3;
  padding: 35px 0 75px;
  margin-top: 20px;
+ @include mobile {
+  background-position: center right calc(50% + 100px);
+ }
 
  .title {
   margin-bottom: 8px;
@@ -12,6 +15,9 @@
  }
  .text {
   margin-top: 55px;
+  @include mobile {
+   margin-top: 30px;
+  }
  }
  .phone-call-2 {
   margin-top: 14px;

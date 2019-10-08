@@ -16,9 +16,14 @@
 
 .contacts-offices-tabs {
  display: flex;
+ flex-wrap: wrap;
  border: 1px solid #BDBDBD;
  padding: 12px 0;
  margin-top: 28px;
+ @include mobile {
+  padding: 0;
+  margin-top: 20px;
+ }
 }
 .contacts-offices-tab {
  width: 25%;
@@ -30,6 +35,11 @@
  text-align: center;
  position: relative;
  cursor: pointer;
+ @include mobile {
+  width: 50%;
+  min-height: 60px;
+  border-top: 1px solid #BDBDBD;
+ }
  &:before {
   content: '';
   width: 82px;
@@ -40,6 +50,20 @@
   left: calc(50% - 41px);
   opacity: 0;
   transition: 0.4s;
+  @include mobile {
+   width: 80px;
+   height: 3px;
+   bottom: 0;
+   left: calc(50% - 30px);
+  }
+ }
+ &:nth-child(1), &:nth-child(2) {
+  border-top: none;
+ }
+ &:nth-child(2n+2) {
+  @include mobile {
+   border-right: none;
+  }
  }
  &:last-child {
   border-right: none;
@@ -96,6 +120,12 @@
    width: 10px;
    height: 10px;
    margin-right: 10px;
+   @include tablet {
+    margin-right: 5px;
+   }
+   @include mobile {
+    margin-right: 2px;
+   }
 
    svg {
     display: block;
@@ -112,6 +142,14 @@
    line-height: 17px;
    letter-spacing: 0.03em;
    color: #018DBD;
+   @include tablet {
+    font-size: 13px;
+    line-height: 130%;
+   }
+   @include mobile {
+    font-size: 12px;
+    line-height: 16px;
+   }
   }
  }
 
@@ -147,6 +185,9 @@
  .contacts-offices-content-tab__map {
   height: 535px;
   background: url(../img/contacts/map.jpg) no-repeat center / cover;
+  @include mobile {
+   height: 240px;
+  }
  }
 }
 

@@ -6,6 +6,13 @@
  background: url(../img/success/success-bg.png) no-repeat right top;
  text-align: center;
  padding: 120px 0 250px;
+ @include tablet {
+  padding: 300px 0 50px;
+ }
+ @include mobile {
+  background-size: contain;
+  padding: 260px 0 0;
+ }
 
  h1 {
 

@@ -7,17 +7,27 @@
 
 .section.section-checkout {
 
+ .title {
+  @include mobile {
+   padding-bottom: 60px;
+  }
+ }
 }
 
 .checkout-layout {
  display: flex;
  justify-content: space-between;
  margin-top: 14px;
+ position: relative;
 }
 
 .checkout-main {
  width: 700px;
  margin-right: 40px;
+ @include tablet-mobile {
+  width: 100%;
+  margin-right: 0;
+ }
 }
 
 .checkout-steps {
@@ -33,6 +43,13 @@
  display: flex;
  align-items: center;
  margin-right: 20px;
+ @include mobile {
+  width: 100%;
+  margin: 0 0 10px;
+ }
+ &:last-child {
+  margin-bottom: 0;
+ }
 
  .checkout-step__number {
   border: 1px solid #FFA200;
@@ -52,6 +69,9 @@
   line-height: 140%;
   letter-spacing: 0.02em;
   color: #BDBDBD;
+  @include mobile {
+   font-size: 18px;
+  }
  }
 
  &.checkout-step--active {
@@ -68,6 +88,35 @@
 
 .checkout-aside {
  width: 460px;
+ @include tablet-mobile {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  border: 1px solid #EEEEEE;
+  background: #FBF5F3;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+ }
+ @include tablet {
+  width: 200px;
+  height: 48px;
+  top: -55px;
+ }
+ @include mobile {
+  width: 310px;
+  height: 48px;
+  top: -60px;
+ }
+
+ &.checkout-aside--active {
+  @include tablet {
+   width: 460px;
+   height: auto;
+  }
+  @include mobile {
+   width: 310px;
+   height: auto;
+  }
+ }
 }
 
 .checkout-aside-block {
@@ -76,6 +125,12 @@
  border-radius: 5px;
  padding: 15px 18px;
  margin-bottom: 25px;
+ @include tablet-mobile {
+  border: none;
+ }
+ @include tablet {
+  padding: 10px 18px;
+ }
  &:last-child {
   margin-bottom: 0;
  }
@@ -84,6 +139,21 @@
 
   .subtitle {
    text-align: center;
+   @include tablet-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   &:after {
+    @include tablet-mobile {
+     content: '';
+     width: 16px;
+     height: 16px;
+     display: inline-block;
+     background: url(../img/common/list-icon.svg) no-repeat center / contain;
+     margin-left: 12px;
+    }
+   }
   }
  }
  &.checkout-aside-block--info {
@@ -98,7 +168,7 @@
 }
 
 .checkout-formblock {
- width: 435px;
+ max-width: 435px;
  margin-top: 35px;
 }
 
@@ -120,6 +190,10 @@
  border-radius: 3px;
  padding: 10px;
  margin-bottom: 7px;
+ @include mobile {
+  flex-wrap: wrap;
+  padding: 7px;
+ }
  &:last-child {
   margin-bottom: 0;
  }
@@ -131,11 +205,19 @@
   border: 1px solid #BDBDBD;
   border-radius: 2px;
   margin-right: 15px;
+  @include mobile {
+   width: 50px;
+   height: 50px;
+   margin-right: 10px;
+  }
  }
 
  .checkout-order-item__info {
   flex: 1;
   margin-right: 20px;
+  @include mobile {
+   margin-right: 15px;
+  }
 
   h2, p {
    font-size: 12px;
@@ -155,6 +237,9 @@
   letter-spacing: 0.02em;
   color: #000000;
   margin-right: 20px;
+  @include mobile {
+   margin-right: 0;
+  }
  }
 
  .checkout-order-item__price {
@@ -163,6 +248,11 @@
   line-height: 140.62%;
   letter-spacing: 0.01em;
   color: #FFA200;
+  @include mobile {
+   width: 100%;
+   text-align: right;
+   margin-top: 15px;
+  }
 
   span {
    font-size: 15px;
@@ -216,6 +306,9 @@
 .checkout-packages-list {
  display: flex;
  justify-content: space-between;
+ @include mobile {
+  flex-direction: column;
+ }
 }
 
 .checkout-packages-item {
@@ -224,6 +317,15 @@
  border-radius: 3px;
  padding: 17px 21px 30px;
  text-align: center;
+ @include mobile {
+  width: 100%;
+  margin-bottom: 20px;
+ }
+ &:last-child {
+  @include mobile {
+   margin-bottom: 0;
+  }
+ }
 
  .checkout-packages-item__title {
   width: 100%;

@@ -7,8 +7,17 @@
  }
 
  &.home-action--3 {
-  background: url(../img/home/action/home-action-bg-3.jpg);
+  background-image: url(../img/home/action/home-action-bg-3.jpg);
   margin: 20px 0;
+  @include mobile {
+   background-position: center;
+  }
+
+  .home-action-main .home-action-main__subtitle br {
+   @include mobile {
+    display: none;
+   }
+  }
  }
 }
 

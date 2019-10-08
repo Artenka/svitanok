@@ -5,6 +5,9 @@
  justify-content: center;
  text-align: center;
  padding: 60px 0 120px;
+ @include mobile {
+  padding: 50px 0;
+ }
 
  h2 {
 
@@ -16,9 +19,15 @@
   line-height: 140%;
   letter-spacing: 0.03em;
   color: #018DBD;
+  @include mobile {
+   font-size: 120px;
+  }
  }
 
  .btn {
   margin: 35px auto 0;
+  @include mobile {
+   margin-top: 20px;
+  }
  }
 }
