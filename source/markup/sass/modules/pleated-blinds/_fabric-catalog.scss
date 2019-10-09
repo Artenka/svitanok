@@ -86,6 +86,14 @@
  margin: 0 40px 35px 0;
  position: relative;
  overflow: hidden;
+ @include tablet {
+  margin-right: 16px;
+ }
+ @include mobile {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px 20px 0;
+ }
  &:hover {
   .pleated-fabric-catalog-item__price {
    opacity: 0;
@@ -96,6 +104,19 @@
  }
  &:nth-child(6n+6) {
   margin-right: 0;
+  @include tablet {
+   margin-right: 16px;
+  }
+ }
+ &:nth-child(4n+4) {
+  @include tablet {
+   margin-right: 0;
+  }
+ }
+ &:nth-child(2n+2) {
+  @include mobile {
+   margin-right: 0;
+  }
  }
 
  .pleated-fabric-catalog-item__brightness {
