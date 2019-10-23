@@ -1,19 +1,90 @@
+#plastic-windows {
+
+ .services-section {
+  margin-top: 86px;
+
+  .title {
+   text-align: center;
+   margin-bottom: 27px;
+  }
+ }
+
+ .services-btn {
+  margin-bottom: 0;
+ }
+
+ .about-1 {
+
+  .about-1__left {
+   width: 486px;
+   @include tablet-mobile {
+    width: 100%;
+   }
+  }
+  .about-1__right {
+   width: 710px;
+   @include tablet-mobile {
+    width: 100%;
+   }
+  }
+ }
+
+ .about-1-content {
+  justify-content: flex-start;
+  padding: 17px 32px 17px 20px;
+
+  .title-3.about-1-content__title {
+   font-size: 22px;
+   font-weight: 700;
+   @include tablet-mobile {
+    text-align: center;
+   }
+  }
+ }
+
+ .about-1-block {
+  &:nth-child(1) {
+   justify-content: flex-start;
+   padding: 15px 0;
+   @include mobile {
+    height: auto;
+    padding: 15px;
+   }
+
+   .about-1-block__title {
+    font-weight: 700;
+    text-align: center;
+   }
+  }
+ }
+}
+
 .plastic-windows-prices-section {
- padding: 60px 0 0;
+ padding: 60px 0 10px;
 
  .title {
   text-align: center;
  }
 }
 
+.plastic-windows-prices-tabs-layout {
+ border: 1px solid #BDBDBD;
+ background: #FFFFFF;
+ margin-top: 30px;
+ position: relative;
+ @include mobile {
+  overflow-x: auto;
+  overflow-y: hidden;
+ }
+}
 .plastic-windows-prices-tabs {
  display: flex;
  align-items: center;
  justify-content: center;
- background: #FFFFFF;
- border: 1px solid #BDBDBD;
  padding: 11px 0;
- margin-top: 30px;
+ @include mobile {
+  width: 1204px;
+ }
 }
 
 .plastic-windows-prices-tab {
@@ -32,6 +103,11 @@
  position: relative;
  cursor: pointer;
  transition: 0.3s;
+ @include tablet {
+  width: auto;
+  flex: 1;
+  font-size: 13px;
+ }
  &:before {
   content: '';
   width: 82px;
@@ -42,6 +118,10 @@
   left: calc(50% - 41px);
   opacity: 0;
   transition: 0.3s;
+  @include tablet {
+   width: 60px;
+   left: calc(50% - 30px);
+  }
  }
  &:last-child {
   border-right: 0;
@@ -61,6 +141,9 @@
  border: 1px solid #BDBDBD;
  border-top: none;
  padding: 30px 50px;
+ @include mobile {
+  padding: 20px;
+ }
 }
 
 .plastic-windows-prices-content-tab {
@@ -73,6 +156,14 @@
 
 .plastic-windows-prices-list {
  display: flex;
+ flex-wrap: wrap;
+ @include tablet {
+  justify-content: center;
+ }
+ @include mobile {
+  flex-direction: column;
+  align-items: center;
+ }
 }
 
 .plastic-windows-prices-item {
@@ -81,8 +172,19 @@
  align-items: center;
  text-align: center;
  margin-right: 140px;
+ @include tablet {
+  margin: 0 35px 20px;
+ }
+ @include mobile {
+  margin: 0 0 30px;
+ }
  &:nth-child(3n+3) {
   margin-right: 0;
+ }
+ &:nth-child(2) {
+  @include tablet {
+   order: 3;
+  }
  }
 
  .plastic-windows-prices-item__title {
@@ -94,8 +196,12 @@
 
  .plastic-windows-prices-item__image {
   width: auto;
-  height: 206px;
+  min-height: 206px;
+  height: auto;
   margin-top: 7px;
+  @include mobile {
+   width: 100%;
+  }
  }
 
  .plastic-windows-prices-item__about {

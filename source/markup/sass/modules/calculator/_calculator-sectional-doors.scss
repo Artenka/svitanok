@@ -1,8 +1,25 @@
 .pleated-fabric-catalog.pleated-fabric-catalog--md.calculator-doors-types {
  justify-content: center;
  margin-top: 80px;
+ @include mobile {
+  margin-top: 0;
+ }
 
  .pleated-fabric-catalog-item {
   margin: 30px 33px;
+  @include mobile {
+   margin: 0 20px 20px 0;
+  }
+
+  &:nth-child(2n+2) {
+   @include mobile {
+    margin-right: 0;
+   }
+  }
+  &:last-child {
+   @include mobile {
+    margin: 0;
+   }
+  }
  }
 }

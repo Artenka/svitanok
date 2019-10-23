@@ -113,6 +113,24 @@ script.
           }
         ]
       });
+
+      // products list slider
+      $('.home-products-list').slick({
+        adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 720,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
     }
 
     if ($(window).width() < 720) {
@@ -135,9 +153,7 @@ script.
         arrows: true,
         dots: false
       });
-
-      // products list slider
-      $('.home-products-list').slick({
+      $('.portfolio-1').slick({
         adaptiveHeight: true,
         infinite: true,
         slidesToShow: 1,

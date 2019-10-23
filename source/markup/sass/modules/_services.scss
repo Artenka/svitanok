@@ -6,6 +6,18 @@
  display: flex;
  flex-wrap: wrap;
  margin-top: 30px;
+
+ &.services--violet {
+
+  .services-item {
+
+   .services-item__title {
+    &:before {
+     background: #A62868;
+    }
+   }
+  }
+ }
 }
 
 .services-item {

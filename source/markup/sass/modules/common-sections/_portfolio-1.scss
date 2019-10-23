@@ -20,9 +20,19 @@
  grid-auto-flow: row dense;
  grid-gap: 4px;
  margin-top: 35px;
+ @include tablet {
+  grid-template-columns: repeat(4, 174px);
+  grid-auto-rows: 136px;
+ }
+ @include mobile {
+  display: block;
+ }
 
  .portfolio-1__item {
   background: no-repeat center / cover;
+  @include mobile {
+   height: 220px;
+  }
 
   &.portfolio-1__item--lg {
    grid-row: span 2;

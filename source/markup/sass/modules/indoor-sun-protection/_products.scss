@@ -1,3 +1,24 @@
 .indoor-sun-protection-products {
  padding: 80px 0 35px;
+ @include mobile {
+  padding: 50px 0 25px;
+ }
+
+ .home-products-slide.home-products-slide--lg .home-products-slide-inner {
+  @include tablet {
+   height: 425px;
+  }
+
+  .home-products-slide-inner__top {
+   @include tablet {
+    padding: 28px 10px 0 35px;
+   }
+  }
+
+  .home-products-slide-inner__title {
+   @include tablet {
+    width: 220px;
+   }
+  }
+ }
 }

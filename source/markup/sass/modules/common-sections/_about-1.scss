@@ -5,13 +5,23 @@
 .about-1 {
  display: flex;
  justify-content: space-between;
+ @include tablet-mobile {
+  flex-direction: column;
+ }
 
  .about-1__left {
   width: 565px;
   display: flex;
+  @include tablet-mobile {
+   width: 100%;
+   margin-bottom: 4px;
+  }
  }
  .about-1__right {
   width: 630px;
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
 }
 
@@ -23,6 +33,9 @@
  background: url(../img/pleated-blinds/fabric-type/fabric-type-content.svg) no-repeat center/cover;
  border: 1px solid #000;
  padding: 30px;
+ @include mobile {
+  padding: 20px;
+ }
 
  .about-1-content__title {
   font-size: 28px;
@@ -46,7 +59,8 @@
 }
 
 .about-1-block {
- width: 313px;
+ width: calc(50% - 2px);
+ //width: 313px;
  height: 272px;
  display: flex;
  flex-direction: column;
@@ -54,9 +68,19 @@
  border: 1px solid #000;
  background: no-repeat center / cover;
  margin: 5px 4px 0 0;
+ @include tablet {
+  width: 353px;
+ }
+ @include mobile {
+  width: 100%;
+  margin-right: 0;
+ }
  &:first-child {
   width: 100%;
   margin: 0;
+  @include mobile {
+   margin-top: 5px;
+  }
  }
  &:nth-child(2n+3) {
   margin-right: 0;
@@ -73,5 +97,128 @@
   text-align: center;
   color: #454545;
   padding: 9px 10px;
+ }
+}
+
+.about-1-brands {
+ margin-top: 45px;
+}
+
+.about-1-brand {
+ display: flex;
+ align-items: center;
+ margin-bottom: 45px;
+ @include tablet {
+  justify-content: space-around;
+ }
+ @include mobile {
+  flex-direction: column;
+  align-items: center;
+ }
+ &:last-child {
+  margin-bottom: 0;
+ }
+
+ .about-1-brand__title {
+  width: 125px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #018DBD;
+  margin-right: 35px;
+  @include mobile {
+   text-align: center;
+   margin: 0 0 10px;
+  }
+ }
+
+ .about-1-brand__logo {
+  width: 115px;
+  height: 59px;
+  background: no-repeat center / contain;
+  margin-right: 65px;
+  @include mobile {
+   margin: 0 0 20px;
+  }
+ }
+
+ .about-1-brand__image {
+  width: 90px;
+  height: 100px;
+  background: no-repeat center / contain;
+ }
+}
+
+
+.about-1-doublewindows-list {
+ display: flex;
+ margin-top: 10px;
+ @include mobile {
+  flex-direction: column;
+ }
+}
+
+.about-1-doublewindows-item {
+ display: flex;
+ margin-right: 20px;
+ @include mobile {
+  margin: 0 0 10px;
+ }
+ &:last-child {
+  margin: 0;
+ }
+
+ .about-1-doublewindows-item__left {
+  width: 115px;
+ }
+ .about-1-doublewindows-item__right {
+  width: 100px;
+ }
+
+ .about-1-doublewindows-item__thumb {
+  height: 160px;
+  background: no-repeat center / cover;
+ }
+
+ .about-1-doublewindows-item__title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #018DBD;
+  margin-top: 5px;
+ }
+
+ .about-1-doublewindows-item__info {
+  margin-top: 10px;
+
+  .about-1-doublewindows-item__info-item {
+   margin-bottom: 10px;
+   &:last-child {
+    margin-bottom: 0;
+   }
+
+   .about-1-doublewindows-item__info-item-title {
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #313131;
+   }
+
+   .about-1-doublewindows-item__info-item-line {
+    width: 100%;
+    height: 6px;
+    background: #ECECEC;
+    margin-top: 5px;
+
+    .about-1-doublewindows-item__info-item-line-fill {
+     height: 100%;
+     background: #018DBD;
+    }
+   }
+  }
  }
 }

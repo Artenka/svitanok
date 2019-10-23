@@ -1,20 +1,47 @@
 .vertical-blinds-about-section {
  background: url(../img/common/ornament-6.svg) no-repeat top -70px left calc(50% - 760px);
+ @include tablet {
+  padding: 30px 0;
+ }
 }
 
 .vertical-blinds-about {
  display: flex;
  justify-content: space-between;
  padding-left: 72px;
+ @include tablet-mobile {
+  padding-left: 0;
+ }
+ @include mobile {
+  flex-direction: column;
+ }
 
  .vertical-blinds-about__content {
   width: 645px;
   padding: 70px 0 40px;
+  @include tablet {
+   flex: 1;
+   padding: 20px 15px 20px 0;
+  }
+  @include mobile {
+   order: 2;
+   width: 100%;
+   padding: 30px 0 40px;
+  }
  }
 
  .vertical-blinds-about__thumb {
   width: 485px;
   height: 350px;
   background: url(../img/vertical-blinds/vertical-blinds-about/vertical-blinds-about-thumb.jpg) no-repeat center / cover;
+  @include tablet {
+   width: 340px;
+   height: 245px;
+  }
+  @include mobile {
+   order: 1;
+   width: 100%;
+   height: 220px;
+  }
  }
 }

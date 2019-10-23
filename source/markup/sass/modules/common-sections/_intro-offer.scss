@@ -16,6 +16,9 @@
 .intro-offer {
  display: flex;
  min-height: 515px;
+ @include tablet-mobile {
+  flex-direction: column;
+ }
 
  .intro-offer__left {
   width: 600px;
@@ -24,6 +27,17 @@
   justify-content: space-between;
   padding: 20px 24px 30px 0;
   position: relative;
+  @include tablet-mobile {
+   width: 100%;
+  }
+  @include tablet {
+   min-height: 460px;
+   padding: 40px 100px 50px 45px;
+  }
+  @include mobile {
+   min-height: 240px;
+   padding: 40px 20px 20px;
+  }
   &:before {
    content: '';
    width: 10px;
@@ -33,6 +47,9 @@
    top: 20px;
    right: -5px;
    z-index: 2;
+   @include tablet-mobile {
+    display: none;
+   }
   }
  }
  .intro-offer__right {
@@ -40,6 +57,12 @@
   display: flex;
   flex-direction: column;
   padding: 25px 0 0 40px;
+  @include tablet {
+   padding: 40px 0 0;
+  }
+  @include mobile {
+   padding: 20px 0 0;
+  }
  }
 
  .intro-offer__thumb {
@@ -50,6 +73,9 @@
   top: 0;
   right: 0;
   z-index: 0;
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
 
  .intro-offer__title, .intro-offer__subtitle {
@@ -58,26 +84,48 @@
  }
  .intro-offer__title {
   text-align: left;
+  @include mobile {
+   font-size: 20px;
+  }
  }
  .intro-offer__subtitle {
   margin-top: 12px;
   padding-right: 10px;
+  @include tablet-mobile {
+   padding-right: 0;
+  }
+  @include tablet {
+   margin-top: 25px;
+  }
  }
 
  .intro-offer__header {
   display: flex;
   align-items: center;
   margin-bottom: 33px;
+  @include mobile {
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 30px;
+  }
 
   .intro-offer__header-left {
    flex: 1;
    padding-left: 15px;
+   @include mobile {
+    flex: initial;
+    width: 100%;
+    padding: 0;
+   }
 
    .intro-offer__header-left-top {
     width: 205px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mobile {
+     width: 100%;
+    }
    }
    .intro-offer__header-left-bottom {
 
@@ -86,6 +134,10 @@
   .intro-offer__header-right {
    width: 300px;
    padding-left: 40px;
+   @include mobile {
+    padding: 0;
+    margin-top: 10px;
+   }
   }
  }
 
@@ -94,11 +146,21 @@
   line-height: 59px;
   font-weight: 700;
   color: #FFA200;
+  @include mobile {
+   width: 100%;
+   font-size: 24px;
+   line-height: 50px;
+   text-align: right;
+  }
 
   span {
    font-weight: 700;
    font-size: 39px;
    line-height: 59px;
+   @include mobile {
+    font-size: 28px;
+    line-height: 30px;
+   }
   }
  }
 
@@ -161,7 +223,11 @@
  }
 
  .intro-offer__footer {
-
+  @include mobile {
+   width: 400px;
+   position: relative;
+   left: calc(50% - 200px);
+  }
  }
 
  .intro-offer__advantages {
@@ -177,13 +243,26 @@
    justify-content: space-between;
    border-right: 1px solid #BDBDBD;
    padding: 10px 20px;
+   @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 10px;
+   }
    &:nth-child(1) {
     flex: initial;
     width: 180px;
+    @include tablet-mobile {
+     flex: 1;
+     width: auto;
+    }
    }
    &:nth-child(3) {
     flex: initial;
     width: 166px;
+    @include tablet-mobile {
+     flex: 1;
+     width: auto;
+    }
    }
    &:last-child {
     border-right: 0;
@@ -197,6 +276,11 @@
     line-height: 14px;
     text-align: center;
     margin-top: 15px;
+    @include mobile {
+     flex: 1;
+     font-size: 10px;
+     margin-top: 10px;
+    }
    }
   }
  }

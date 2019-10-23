@@ -41,6 +41,9 @@
  font-size: 22px;
  line-height: 140%;
  letter-spacing: 0.02em;
+ @include mobile {
+  font-size: 18px;
+ }
 }
 .title-big {
  font-weight: 700;
@@ -172,10 +175,14 @@
 }
 
 .tabs {
+ @extend .custom-scroll;
  display: flex;
  background: #FFFFFF;
  border: 1px solid #BDBDBD;
  padding: 12px 0;
+ @include mobile {
+  overflow-x: auto;
+ }
 }
 .tab {
  flex: 1;
@@ -191,6 +198,10 @@
  color: #4F4F4F;
  cursor: pointer;
  position: relative;
+ @include mobile {
+  flex: initial;
+  min-width: 50%;
+ }
  &:before {
   content: '';
   width: 70px;
@@ -200,6 +211,9 @@
   bottom: -12px;
   left: calc(50% - 35px);
   opacity: 0;
+  @include mobile {
+   display: none;
+  }
  }
  &:last-child {
   border-right: 0;
@@ -372,14 +386,21 @@
 
 .color-picker {
  display: flex;
+ flex-wrap: wrap;
+ @include mobile {
+  justify-content: center;
+ }
 
  .color-picker__item {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  margin-right: 18px;
+  margin: 5px 18px 5px 0;
   position: relative;
   cursor: pointer;
+  @include mobile {
+   margin: 10px;
+  }
   &:before {
    content: '';
    width: 36px;

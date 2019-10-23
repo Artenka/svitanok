@@ -100,6 +100,9 @@
  &.home-action-form--2 {
   display: flex;
   flex-wrap: wrap;
+  @include mobile {
+   flex-direction: column;
+  }
 
   .home-action-form__formgroup {
    flex: 1;
@@ -110,6 +113,9 @@
 
   .home-action-form__checkbox {
    margin-top: 20px;
+   @include mobile {
+    margin-top: 10px;
+   }
   }
  }
 }

@@ -6,10 +6,19 @@
 }
 
 .banner-slider {
-
+ @include mobile {
+  width: 400px;
+  left: calc(50% - 200px);
+ }
 }
 
 .banner-slide {
  height: 350px;
  background: no-repeat center / cover;
+ @include tablet {
+  height: 280px;
+ }
+ @include mobile {
+  height: 220px;
+ }
 }

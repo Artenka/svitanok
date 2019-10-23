@@ -1,5 +1,8 @@
 .popup.popup-price {
  width: 630px;
+ @include mobile {
+  width: 310px;
+ }
 
  .home-action-form {
   margin-top: 0;
@@ -8,6 +11,9 @@
 
 .popup-price-checkboxes {
  margin-top: 45px;
+ @include mobile {
+  margin-top: 30px;
+ }
 
  h2 {
   margin-bottom: 15px;

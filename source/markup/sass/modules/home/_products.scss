@@ -139,6 +139,9 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 28px 10px 0 46px;
+  @include tablet {
+   padding: 28px 10px 0 35px;
+  }
 
   &.home-products-slide-inner__top--1 {
    padding: 24px 17px 0;
@@ -168,6 +171,11 @@
   color: #000000;
   padding: 10px 20px 10px 60px;
   position: relative;
+  @include tablet {
+   width: 220px;
+   font-size: 16px;
+   padding: 10px 15px 10px 50px;
+  }
   @include mobile {
    font-size: 14px;
   }

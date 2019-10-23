@@ -1,12 +1,26 @@
 .popup.popup-cart {
  width: 930px;
  padding: 18px 30px;
+ @include tablet {
+  width: 710px;
+  padding: 18px 20px;
+ }
+ @include mobile {
+  width: 310px;
+  padding: 15px 10px;
+ }
 }
 
 .cart-header {
  border-bottom: 1px solid #BDBDBD;
  padding-bottom: 14px;
  position: relative;
+
+ .subtitle {
+  @include mobile {
+   max-width: 200px;
+  }
+ }
 
  .cart-header__print {
   width: 40px;
@@ -18,6 +32,9 @@
   top: -7px;
   right: 48px;
   cursor: pointer;
+  @include mobile {
+   top: 0;
+  }
  }
 }
 
@@ -28,6 +45,11 @@
  background: url(../img/common/cart-callback-bg.svg) no-repeat center / cover, #FBF5F3;
  padding: 16px 19px;
  margin-top: 12px;
+ @include mobile {
+  flex-direction: column;
+  padding: 20px 10px;
+  margin-top: 10px;
+ }
 
  .cart-callback__left {
 
@@ -35,6 +57,9 @@
  .cart-callback__right {
   display: flex;
   align-items: center;
+  @include mobile {
+   margin-top: 15px;
+  }
  }
 
  .cart-callback__timer {
@@ -64,6 +89,10 @@
  padding: 14px 29px 12px 15px;
  margin-bottom: 24px;
  position: relative;
+ @include mobile {
+  flex-wrap: wrap;
+  padding: 35px 15px 15px;
+ }
  &:last-child {
   margin-bottom: 0;
  }
@@ -75,8 +104,12 @@
   position: absolute;
   top: -16px;
   left: 0;
+  @include mobile {
+   top: -13px;
+  }
 
   .cart-item__line-inner {
+   max-width: 90%;
    background: #FFFFFF;
    border: 1px solid #FFA200;
    border-radius: 2px;
@@ -87,6 +120,10 @@
    letter-spacing: 0.02em;
    color: #4F4F4F;
    padding: 7px 15px;
+   @include mobile {
+    font-size: 10px;
+    padding: 5px 10px;
+   }
 
    &.cart-item__line-inner--gift {
     min-width: 210px;
@@ -138,6 +175,11 @@
  .cart-item__info {
   width: 250px;
   margin-left: 30px;
+  @include mobile {
+   width: 150px;
+   padding: 10px 0;
+   margin-left: 10px;
+  }
 
   h2 {
    font-size: 16px;
@@ -149,12 +191,21 @@
  }
 
  .cart-item__quantity {
-
+  @include mobile {
+   width: 92px;
+   margin-top: 20px;
+  }
  }
 
  .cart-item__price {
   width: 150px;
   margin: 0 45px 0 150px;
+  @include tablet {
+   margin-left: 80px;
+  }
+  @include mobile {
+   margin: 0 0 0 10px;
+  }
 
   .cart-item__price-old {
    font-size: 10px;
@@ -169,6 +220,9 @@
    line-height: 140%;
    letter-spacing: 0.01em;
    color: #FFA200;
+   @include tablet-mobile {
+    font-size: 18px;
+   }
   }
  }
 
@@ -177,6 +231,11 @@
   height: 15px;
   background: url(../img/common/delete-icon.svg) no-repeat center / contain;
   cursor: pointer;
+  @include mobile {
+   position: absolute;
+   top: 40px;
+   right: 10px;
+  }
  }
 }
 
@@ -187,6 +246,9 @@
  background: #FBF5F3;
  padding: 12px 15px;
  margin-top: 10px;
+ @include mobile {
+  flex-direction: column;
+ }
 
  .cart-footer__total {
   flex: 1;
@@ -194,6 +256,9 @@
   line-height: 140%;
   text-align: right;
   margin: 0 30px;
+  @include mobile {
+   margin: 30px 0;
+  }
 
   b {
    font-size: 25px;

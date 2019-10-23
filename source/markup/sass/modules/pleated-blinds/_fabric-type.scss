@@ -1,29 +1,45 @@
 .pleated-fabric-type {
  display: flex;
  justify-content: space-between;
+ @include tablet-mobile {
+  flex-direction: column;
+ }
 
  .pleated-fabric-type__left {
   width: 565px;
   display: flex;
-
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
  .pleated-fabric-type__right {
   width: 630px;
+  @include tablet-mobile {
+   width: 100%;
+  }
  }
 
  .pleated-fabric-type__content {
   flex: 1;
   border: 1px solid #000;
   background: url(../img/pleated-blinds/fabric-type/fabric-type-content.svg) no-repeat center / cover;
-
   padding: 86px 30px;
+  @include mobile {
+   padding: 30px 20px;
+  }
 
   .subtitle {
    max-width: 410px;
+   @include tablet-mobile {
+    max-width: 100%;
+   }
   }
   .text {
    max-width: 440px;
    margin-top: 40px;
+   @include tablet-mobile {
+    max-width: 100%;
+   }
   }
  }
 
@@ -31,6 +47,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @include mobile {
+   flex-direction: column;
+  }
 
   .pleated-fabric-type__about-item {
    width: 313px;
@@ -41,9 +60,18 @@
    border: 1px solid #000;
    background: no-repeat center / cover;
    margin-top: 5px;
+   @include tablet {
+    width: 353px;
+   }
+   @include mobile {
+    width: 100%;
+   }
    &:first-child {
     width: 100%;
     margin-top: 0;
+    @include mobile {
+     margin-top: 5px;
+    }
    }
 
    .pleated-fabric-type__about-item-footer {

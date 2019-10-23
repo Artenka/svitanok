@@ -12,6 +12,10 @@
  align-items: flex-start;
  justify-content: space-between;
  margin-top: 35px;
+ @include tablet-mobile {
+  flex-direction: column;
+  align-items: center;
+ }
 
  .cost-calculator-main__content {
   flex: 1;
@@ -20,9 +24,24 @@
   align-items: center;
   text-align: center;
   padding: 80px 10px 0;
+  @include tablet-mobile {
+   order: 2;
+  }
+  @include mobile {
+   padding: 35px 0 0;
+  }
 
   > h2 {
    font-size: 32px;
+   @include mobile {
+    font-size: 24px;
+   }
+
+   br {
+    @include tablet-mobile {
+     display: none;
+    }
+   }
 
    span, b {
     font-weight: 700;
@@ -33,7 +52,7 @@
    margin-top: 30px;
   }
   > p {
-   width: 230px;
+   max-width: 230px;
    font-size: 11px;
    line-height: 15px;
    color: #000000;
@@ -45,6 +64,16 @@
   width: 750px;
   height: 480px;
   background: url(../img/common/cost-calculator/cost-calculator-image.jpg) no-repeat center / cover;
+  @include tablet-mobile {
+   order: 1;
+   width: 100%;
+  }
+  @include tablet {
+   height: 460px;
+  }
+  @include mobile {
+   height: 200px;
+  }
  }
 
  &.cost-calculator-main--green {
