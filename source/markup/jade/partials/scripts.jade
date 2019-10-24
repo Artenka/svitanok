@@ -193,6 +193,62 @@ script.
       dots: false
     });
 
+    // sectional-doors-types slider
+    $('.sectional-doors-types-slider').slick({
+      adaptiveHeight: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    if ($(window).width() < 1240) {
+      // sectional-doors-automatic slider
+      $('.sectional-doors-automatic').slick({
+        adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 720,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    }
+
+    if ($(window).width() < 720) {
+      // sectional-doors-types-2-main slider
+      $('.sectional-doors-types-2-main').slick({
+        adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false
+      });
+    }
+
     // quantity/number input
     $('.quantity__minus').click(function(){
       $quantityNum = $(this).closest('.quantity').find('.quantity__number');
